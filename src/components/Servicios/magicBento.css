@@ -1,0 +1,383 @@
+
+
+
+
+:root {
+  --hue: 27;
+  --sat: 69%;
+  --white: hsl(0, 0%, 100%);
+  --purple-primary: #f3914cbe;
+  --purple-glow: #ece45427;
+  --purple-border: #f3914cbe;
+  --border-color: #f3914cbe;
+  /* --background-dark: #000000; */
+  color-scheme: light dark;
+}
+
+
+.card-grid {
+
+  display: grid;
+  gap: 1em;
+  padding: 0.75em;
+  max-width: 54em;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+.magic-bento-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  aspect-ratio: 4/3;
+  min-height: 200px;
+  width: 100%;
+  max-width: 100%;
+  /* padding: 1.25em; */
+  border-radius: 20px;
+  /* border: 3px solid rgba(66, 66, 66, 0.358); */
+  box-shadow: 0 0 15px rgba(118, 118, 118, 0.465);
+  /* background: var(--background-dark); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  font-weight: 300;
+  /* overflow: hidden; */
+  transition: all 0.3s ease;
+
+  --glow-x: 50%;
+  --glow-y: 50%;
+  --glow-intensity: 0;
+  --glow-radius: 200px;
+}
+
+.magic-bento-card:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 0px 25px rgba(210, 130, 86, 0.511); */
+  box-shadow: 0 0px 20px rgba(244, 244, 244, 0.621);
+  
+}
+
+.magic-bento-card__header,
+.magic-bento-card__content {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--white);
+}
+
+
+
+.magic-bento-card__content {
+  flex-direction: column;
+}
+
+.magic-bento-card__label {
+  font-family: 'Poiret One';
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 4px;
+  position: absolute;
+  font-size: 16px;
+}
+
+.magic-bento-card__title,
+.magic-bento-card__description {
+  --clamp-title: 1;
+  --clamp-desc: 2;
+}
+
+.magic-bento-card__title {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 0.25em;
+}
+
+.magic-bento-card__description {
+  font-size: 12px;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__title,
+.magic-bento-card--text-autohide .magic-bento-card__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__title {
+  -webkit-line-clamp: var(--clamp-title);
+  line-clamp: var(--clamp-title);
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__description {
+  -webkit-line-clamp: var(--clamp-desc);
+  line-clamp: var(--clamp-desc);
+}
+
+@media (max-width: 599px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+
+  .magic-bento-card {
+    width: 100%;
+    min-height: 180px;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .magic-bento-card:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .magic-bento-card:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+  }
+
+  .magic-bento-card:nth-child(6) {
+    grid-column: 4;
+    grid-row: 3;
+  }
+}
+
+.particle-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.particle::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #f3914cbe;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.particle-container:hover {
+  box-shadow:
+    0 4px 20px #f3924c42,
+    0 0 30px var(--purple-glow);
+}
+
+/* Global spotlight styles */
+.global-spotlight {
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+  z-index: 200 !important;
+  pointer-events: none;
+}
+
+.bento-section {
+  position: relative;
+  user-select: none;
+}
+
+
+
+.magic-bento-card {
+  position: relative;
+  z-index: 0;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.magic-bento-card * {
+  position: relative;
+  z-index: 1;
+}
+
+.particle::before {
+  background: none !important;
+}
+
+
+
+/* ---------- Curtain overlay (left → right) ---------- */
+
+.card-curtain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  pointer-events: none; /* contenido no clickeable hasta que aparezca totalmente */
+  z-index: 30; /* sobre el fondo, debajo de partículas si querés */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+/* inner panel that slides */
+.card-curtain__inner {
+
+  width: 100%;
+  /* max-width: 420px; limitar ancho opcional */
+  height: 100%;
+  transform: translateX(-70%); /* off-screen a la izquierda */
+  transition: transform 220ms ease, opacity .8s ease;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.912); /* semitransparente oscuro */
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  padding: 1.25rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  
+  /* box-shadow: 0 0px 10px rgb(0, 0, 0); */
+  pointer-events: auto; /* una vez visible, permite clicks en botón */
+}
+
+/* contenido del telón */
+.card-curtain__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+
+.card-curtain__desc {
+  font-size: 0.87rem;
+  opacity: 0.95;
+  margin-bottom: 0.35rem;
+}
+
+.card-curtain__text {
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 0.75rem;
+}
+
+/* acciones / boton */
+.card-curtain__actions {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 0.25rem; 
+}
+
+.btn-contratar {
+  /* background: transparent;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(243,145,76,0.12), inset 0 -1px 0 rgba(255,255,255,0.03);
+  color: #fff;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  background-image: linear-gradient(90deg, rgba(243,145,76,0.14), rgba(243,145,76,0.06));
+  border: 1px solid rgba(243,145,76,0.18); */
+
+ 
+  min-width: 100px;
+  border: none;
+  background: #5a5a5a57;
+  backdrop-filter: blur(10px);
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.btn-contratar:hover {
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 10px 30px rgba(243,145,76,0.18); */
+
+  background: #f3914cbe;
+  transition: all 0.7s ease;
+}
+
+/* Hover trigger: cuando el contenedor .magic-bento-card está en hover, el telón aparece */
+.magic-bento-card:hover .card-curtain__inner,
+.magic-bento-card.is-active .card-curtain__inner {
+  transform: translateX(0);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Si querés que el telón empiece más a la izquierda (animación más marcada) */
+.card-curtain__inner { transform: translateX(-110%); }
+
+/* Mobile tweaks: usa menos ancho en móviles */
+@media (max-width: 599px) {
+  .card-grid {
+    display: none;
+  }
+  /* .card-curtain__inner {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0;
+    transform: translateX(-100%);
+  }
+  .card-curtain { justify-content: flex-start; align-items: stretch; } */
+}
+
+/* Asegurá el stacking para que el contenido de la card quede visible encima si hace falta */
+.magic-bento-card { position: relative; z-index: 0; }
+.magic-bento-card > * { position: relative; z-index: 5; } /* contenido por encima */
+.card-curtain { z-index: 10; } /* el telón por encima del contenido */
+
+.nomb {
+
+  margin: 20px;
+}
+
+.nomb h2 {
+
+  font-family: 'Waterfall';
+  font-size: 4rem;
+  gap: -10px;
+  font-weight: 100;
+  line-height: 50px;
+  /* margin-bottom: -10px; */
+  /* line-height: .8; en mediaquery */
+  /* text-align: center; */
+}
+
+.nomb span {
+  
+  font-size: .8rem;
+  color: #ffbc8bda;
+}

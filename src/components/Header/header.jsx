@@ -1,0 +1,95 @@
+import React, { useState, useEffect } from "react";
+import "./header.css";
+import Contact from '../Contacto/contacto';
+import Logo from '../../assets/img/logoSinFondo.png';
+
+const sections = [
+  { id: "inicio", label: "Inicio" },
+  { id: "quienes-somos", label: "Somos" },
+  { id: "servicios", label: "Servicios" },
+  { id: "galeria", label: "Galería" },
+  // { id: "proyectos", label: "Proyectos" },
+  { id: "equipo", label: "Equipo" },
+  // { id: "blog", label: "Blog" },
+  { id: "testimonios", label: "Testimonios" },
+  
+  { id: "faq", label: "Preguntas" },
+  // { id: "contacto", label: "Contacto" },
+];
+
+
+
+export default function header() {
+  const [activeSection, setActiveSection] = useState("inicio");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
+
+      for (const section of sections) {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            setActiveSection(section.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+  
+    <div className='header'>
+        <div className="degradadoHeader"></div>
+        <a href="#inicio"><img className="logo cursor-target" src={Logo} alt="" /></a>
+        
+        
+        <div className="container-nav">
+          <nav className="nav">
+            
+            <ul className="nav-links">
+              {sections.map((section) => (
+                <li key={section.id}>
+                  <button
+                    onClick={() => scrollToSection(section.id)}
+                    className={`nav-btn ${
+                      activeSection === section.id ? "active cursor-target" : "cursor-target"
+                    }`}
+                  >
+                    
+                    {section.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="contact">
+            <button className="nav-btn-contact cursor-target">Contacto</button>
+          </div>
+          <Contact/>
+        </div>
+              
+          
+        
+    </div>
+    
+  );
+}
+
+

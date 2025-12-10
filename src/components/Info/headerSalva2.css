@@ -1,0 +1,232 @@
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header .logo {
+  width: 100px;
+  z-index: 1001;
+}
+
+/* Contenedor del nav */
+.GlassContainer-no {
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.GlassContainer-si {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 1s;
+}
+.GlassContent-si {
+  background: 
+    linear-gradient(
+      to bottom left,
+      rgba(0, 0, 0, 1) 20%,    /* color sólido */
+      rgba(0, 0, 0, 0.354) 100%   /* esquina transparente */
+    );
+}
+.nav {
+  width: 100vw;
+  height: 100vh;
+  /* margin: 0 auto; */
+  display: flex;
+  font-family: 'Cormorant Garamond';
+  
+  justify-content:end;
+  align-items: center;
+  /* background-color: rgba(108, 108, 108, 0); */
+  border-radius: 20px;
+  /* backdrop-filter: blur(50px); */
+  padding: 70px 12px 70px 12px;
+}
+
+/* Lista de enlaces */
+.nav-links {
+  /* background-color: #1a1a1a00; */
+  list-style: none;
+  display: flex;
+  
+  flex-direction: column;
+  width: 350px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: end;
+  padding-right: 30px;
+}
+
+/* Botones del menú */
+
+.nav-btn {
+  /* border: none; */
+  
+  height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: #dbdbdb;
+  /* font-family: 'Cormorant Garamond'; */
+  font-family: 'Cormorant';
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 10px 0px;
+  border-radius: 104px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  
+  
+}
+
+.menu {
+  padding: 10px;
+}
+
+.linea {
+  width: 30px;
+  height: 2px;
+  background-color: red;
+}
+
+.menu button {
+  height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 300;
+  padding: 0px 0px;
+  border-radius: 104px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  /* background: #333333;
+  box-shadow: 0 0 5px #333333,
+  0 0 10px #333333,
+  0 0 15px #333333,
+  0 0 20px #333333,
+  0 0 25px #333333,
+  0 0 30px #333333,
+  0 0 35px #333333,
+  0 0 40px #333333,
+  0 0 45px #333333a9,
+  0 0 50px #333333a9,
+  0 0 60px #333333a9,
+  0 0 70px #333333a9,
+  0 0 90px #333333a9,
+  0 0 110px #333333a9,
+  0 0 200px #333333a9; */
+  transition: all 0.2s ease;
+
+}
+
+.menu button:hover {
+  opacity: .9;
+  height: 1px;
+  border: none;
+  
+  /* color: #1a1a1a; */
+  font-weight: 600;
+}
+
+.nav-btn-contact:hover {
+  background: #f3914cbe;
+  transition: all 0.7s ease;
+}
+
+/* Hover */
+.nav-btn:hover {
+  /* background: #fff7ef2a;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.871) inset,
+              0px 0px 8px rgba(17, 17, 17, 0.576); */
+  /* background: #232323;
+  box-shadow: 0 0 5px #232323,
+  0 0 10px #232323,
+  0 0 15px #232323,
+  0 0 20px #232323,
+  0 0 25px #232323,
+  0 0 30px #232323,
+  0 0 35px #232323,
+  0 0 40px #232323,
+  0 0 45px #232323,
+  0 0 50px #232323,
+  0 0 60px #232323,
+  0 0 70px #232323,
+  0 0 90px #232323,
+  0 0 110px #232323,
+  0 0 200px #232323; */
+  transition: all 0.2s ease;
+}
+
+/* Activo */
+.nav-btn.active {
+  /* width: 200px; */
+  opacity: .9;
+  height: 1px;
+  border: none;
+  /* background: #f3924c;
+  box-shadow: 0 0 5px #f3924c,
+  0 0 10px #f3924c,
+  0 0 15px #f3924c,
+  0 0 20px #f3924c,
+  0 0 25px #f3924c,
+  0 0 30px #f3924c,
+  0 0 35px #f3924c,
+  0 0 40px #f3924c,
+  0 0 45px #f3924c,
+  0 0 50px #f3924c,
+  0 0 60px #f3924c,
+  0 0 70px #f3924c,
+  0 0 90px #f3924c,
+  0 0 110px #f3924c,
+  0 0 200px #f3924c; */
+  color: #ce9c5e;
+  font-weight: 600;
+}
+
+/* Animación sutil al hacer scroll */
+.liquid-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    font-size: 0.9rem;
+  }
+}
+
+

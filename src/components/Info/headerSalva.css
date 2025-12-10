@@ -1,0 +1,126 @@
+.header {
+    width: 100%;
+    position: fixed;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header .logo {
+  width: 100px;
+}
+
+/* Contenedor del nav */
+.nav {
+  width: 100%;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(108, 108, 108, 0);
+  border-radius: 20px;
+  /* backdrop-filter: blur(50px); */
+  padding: 10px 12px;
+}
+
+/* Lista de enlaces */
+.nav-links {
+  background-color: #1a1a1a00;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botones del menú */
+.nav-btn {
+  /* border: none; */
+  border: solid 1px rgba(40, 40, 40, 0.405);
+  background: rgba(163, 163, 163, 0.093);
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+  backdrop-filter: blur(2px);
+  transition: all 0.7s ease;
+  box-shadow: 0px 0px 8px rgba(17, 17, 17, 0.576);
+  
+}
+
+.nav-btn-contact {
+  min-width: 100px;
+  border: none;
+  background: rgba(92, 92, 92, 0.39);
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.7s ease;
+  /* box-shadow: 0px 0px 8px rgba(17, 17, 17, 0.576); */
+}
+
+.nav-btn-contact:hover {
+  background: #f3914cbe;
+  transition: all 0.7s ease;
+}
+
+/* Hover */
+.nav-btn:hover {
+  background: #fff7ef2a;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.871) inset,
+              0px 0px 8px rgba(17, 17, 17, 0.576);
+  transition: all 0.7s ease;
+}
+
+/* Activo */
+.nav-btn.active {
+  border: none;
+  background: #f3914cbe;
+  color: #1a1a1a;
+  font-weight: 600;
+  border-radius: 16px;
+  box-shadow: 0px 0px 8px rgba(17, 17, 17, 0.576);
+}
+
+/* Animación sutil al hacer scroll */
+.liquid-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fondo de página para resaltar el efecto */
+/* body {
+  background: linear-gradient(135deg, #000000, #2d2d2d);
+  color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+} */

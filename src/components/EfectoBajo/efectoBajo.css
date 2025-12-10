@@ -1,0 +1,150 @@
+/* ------------------------------- */
+/* TU CÓDIGO ORIGINAL */
+.efectoBajo {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    z-index: 500;
+}
+
+.efectoBajo .Bdegradado {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    mask-image: linear-gradient(to bottom, transparent, black);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 90%);
+}
+
+.icono-wsp {
+    position: absolute;
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .5s ease, transform .5s ease, color .3s ease;
+}
+
+.icon-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icono-wsp:hover {
+    color: green;
+}
+
+/* ------------------------------- */
+/* NUEVO: VENTANA WHATSAPP */
+
+.wsp-modal {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 320px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: #282828; */
+    background-image: url(../../assets/img/fondoWhatsap.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: wspFadeIn .35s ease forwards;
+    z-index: 600;
+}
+
+@keyframes wspFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HEADER */
+.wsp-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.wsp-header .wsp-logo {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+/* .close-btn {
+    position: absolute;
+    padding: 4px 6px;  
+    border-radius: 50%;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.35rem;
+    transition: .2s ease;
+    background-color: rgba(47, 55, 43, 0.743);
+}
+
+.close-btn:hover {
+    opacity: .7;
+} */
+
+/* CUERPO */
+.wsp-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+/* BOCADILLO DE CHAT */
+.chat-bubble {
+    width: 100%;
+    color: #282828;
+    background: #fff;
+    border-radius: 20px 20px 20px 0px;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* BOTÓN */
+.wsp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    color: white;
+    padding: 12px;
+    width: 150px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+    gap: 8px;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.wsp-button:hover {
+    filter: brightness(1.2);
+}

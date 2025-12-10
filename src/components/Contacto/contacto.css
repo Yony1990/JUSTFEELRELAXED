@@ -1,0 +1,104 @@
+.container-contacto {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.content-contacto {
+    padding: 22px 0px 22px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact-btn-header {
+  z-index: 1005;
+  margin-left: 20px;
+  min-width: 100px;
+  border: none;
+  background: #5a5a5a57;
+  backdrop-filter: blur(10px);
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.contact-btn-header:hover {
+  background: #f3914cbe;
+}
+
+/* LISTA — OCULTA POR DEFECTO */
+.content-redes-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.content-redes-social.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* ANIMACIÓN ESCALONADA (staggered) */
+.content-redes-social li {
+  list-style: none;
+  text-align: end;
+  border: none;
+  background: #5a5a5a57;
+  backdrop-filter: blur(10px);
+  color: #dbdbdb;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all .4s ease;
+}
+
+/* Cuando el menú está abierto, animar cada li con delay */
+.content-redes-social.open li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content-redes-social.open li:nth-child(1):hover {
+    background-color: green;
+}
+
+.content-redes-social.open li:nth-child(2):hover {
+    background-color: rgb(78, 170, 217);
+}
+
+.content-redes-social.open li:nth-child(3):hover {
+    background-color: rgb(223, 152, 76);
+}
+
+.content-redes-social.open li:nth-child(4):hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.content-redes-social.open li:nth-child(1) { transition-delay: .05s; }
+.content-redes-social.open li:nth-child(2) { transition-delay: .15s; }
+.content-redes-social.open li:nth-child(3) { transition-delay: .25s; }
+.content-redes-social.open li:nth-child(4) { transition-delay: .35s; }
+

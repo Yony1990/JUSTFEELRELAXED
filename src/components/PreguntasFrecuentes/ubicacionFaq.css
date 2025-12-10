@@ -1,0 +1,235 @@
+.ubicacionfaq-section {
+  width: 100%;
+  max-height: 100svh;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 40px; */
+  padding: 40px 80px;
+  box-sizing: border-box;
+}
+
+/* -------------------------------- MAPA -------------------------------- */
+.container-all-map {
+  display: flex;
+  gap: 20px;
+}
+.map-container {
+  /* flex: 1; */
+  max-width: 600px;
+}
+
+.map-title {
+  font-family: 'Waterfall';
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: -5px;
+}
+
+.map-container .direcctionss {
+    font-size: .8rem;
+    color: #ffbc8bda;
+    
+}
+
+.map-card {
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+.container-other {
+  margin-top: 20px;
+  width: 200px;
+  height: 320px;
+  background-color: red;
+}
+
+.map-card:hover {
+  box-shadow: 0 0px 20px rgba(211, 211, 211, 0.55);
+  transition: 0.4s ease;
+}
+
+.map-card img {
+    scale: 1.05;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease;
+}
+
+.map-card:hover img{
+    scale: 1.6;
+}
+
+.map-card .degrade {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.905) 0%, rgba(0,0,0,0));
+    z-index: 2;
+    transition: all .3s ease;
+}
+
+.map-card:hover .degrade {
+    opacity: 1;
+}
+
+.map-card a {
+    
+    text-decoration: none;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-card a span {
+    opacity: 0;
+    padding: 10px 20px;
+    color: black;
+    background-color: #f3924c;
+    box-shadow: 0 0 30px black;
+    border-radius: 25px;
+    scale: .5;
+    transform: translateY(150px);
+    transition: all .5s ease;
+}
+
+.map-card a span:hover {
+    background-color: #eb9b6d;
+}
+
+.map-card:hover a span {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+}
+
+.map-frame {
+  width: 100%;
+  height: 420px;
+  border: none;
+  border-radius: 12px;
+}
+
+.text-local {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.text-local .info-card {
+  min-width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.text-local .carruc-card {
+  width: 100%;
+  height: 200px;
+}
+
+/* .text-local p {
+  font-size: .73em;
+  text-align: justify;
+} */
+
+/* -------------------------------- FAQ -------------------------------- */
+
+.faq-container {
+  /* flex: 1.2; */
+  max-width: 500px;
+}
+
+.faq-title {
+  font-family: 'Waterfall';
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: -5px;
+}
+
+.faq-container .client-pregunt {
+    font-size: .8rem;
+    color: #ffbc8bda;
+}
+
+.faq-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.faq-item {
+  
+  background: rgba(255,255,255,0.08);
+  padding: 15px 22px;
+  border-radius: 14px;
+  /* backdrop-filter: blur(10px); */
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.3s;
+}
+
+.faq-item:hover {
+  box-shadow: 0 0px 20px rgba(211, 211, 211, 0.621);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.faq-icon {
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+/* Animación suave de abrir/cerrar */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.faq-answer.open {
+  margin-top: 10px;
+  opacity: 1;
+  max-height: 300px;
+}
+
+/* -------------------------------- RESPONSIVE -------------------------------- */
+@media (max-width: 1320px) {
+  .ubicacionfaq-section {
+    padding: 40px 40px;
+  }
+
+  .map-frame {
+    height: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  .ubicacionfaq-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .map-frame {
+    height: 300px;
+  }
+}

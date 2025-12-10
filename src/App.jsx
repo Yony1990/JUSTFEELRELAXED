@@ -1,0 +1,153 @@
+import './App.css'
+import Portada from './components/Portada/portada'
+import Header from "./components/Header/header";
+import Galery from "./components/Galeria/galery";
+import MagicBento from './components/Servicios/magicBento'
+import TargetCursor from './components/StyleBit/targetCursor';
+import Testimonios from './components/Reseñas/testimonios';
+import EfectoBajo from './components/EfectoBajo/efectoBajo'
+import Agenda from './components/Agenda/agenda';
+import Explica from './components/Explicaciones/explicaciones';
+import Ubicac from './components/PreguntasFrecuentes/ubicacionFaq';
+import Footer from './components/Footer/footer';
+
+
+
+function App() {
+
+  const sectionIds = [
+    {
+      id: "inicio",
+      content: (
+        <>
+          <Portada/>
+        </>
+      ),
+    },
+    {
+      id: "quienes-somos",
+      content: (
+        <section className="segunda-seccion">
+          <h2>Quiénes Somos</h2>
+          <p>Somos un equipo apasionado por la innovación y la tecnología.</p>
+        </section>
+      ),
+    },
+    {
+      id: "servicios",
+      content: (
+        <>
+          <MagicBento 
+            textAutoHide={true}
+            enableStars={false}
+            enableSpotlight={true}
+            enableBorderGlow={true}
+            enableTilt={true}
+            enableMagnetism={true}
+            clickEffect={false}
+            spotlightRadius={300}
+            particleCount={20}
+            glowColor="243, 145, 76"
+          />
+          
+        </>
+      ),
+    },
+    {
+      id: 'agenda',
+      content: (
+        <>
+          <Explica/>
+        </>
+      ),
+    },
+    {
+      id: 'agendate',
+      content: (
+        <>
+          <Agenda/>
+        </>
+      ),
+    },
+    {
+      id: "galeria",
+      content: (
+
+        <>
+            <Galery/>
+        </>
+      ),
+    },
+    
+    {
+      id: "equipo",
+      content: (
+        <>
+          <h2>Equipo</h2>
+          <p>Profesionales comprometidos con la excelencia.</p>
+        </>
+      ),
+    },
+    {
+      id: "testimonios",
+      content: (
+        <>
+          <Testimonios/>
+        </>
+      ),
+    },
+    
+    {
+      id: "faq",
+      content: (
+        <>
+          <Ubicac/>
+        </>
+      ),
+    },
+  ];
+  
+
+  return (
+    
+    <div className="app">
+      
+      <EfectoBajo/>
+
+      <div>
+        <TargetCursor 
+          spinDuration={2}
+          hideDefaultCursor={true}
+          parallaxOn={true}
+        />
+
+        <Header />
+
+        <div className='sections'>
+          {sectionIds.map((section) => (
+            <section 
+              key={section.id} 
+              id={section.id} 
+              className="section"
+              style={{
+                width: "100%",
+                height: "100svh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "#fff",
+              }}
+            >
+            {section.content}
+            </section>
+          ))}
+        </div>
+      </div>
+      
+      <Footer/>
+
+    </div>
+  )
+}
+
+export default App

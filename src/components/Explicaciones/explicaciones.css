@@ -1,0 +1,223 @@
+/* --- GENERAL --- */
+.resultados-container {
+  width: 100%;
+  padding: 80px 20px;
+
+}
+
+.resultados-container .titulos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultados-container .titulos span {
+    font-family: 'Waterfall';
+    font-size: 2.5rem;
+    color: #ffbc8bda;
+}
+
+.resultados-container .titulos h2 {
+    font-weight: 300;
+}
+
+.resultados-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* --- GRID --- */
+.resultados-grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+  display: flex;
+  border: 3px solid #404040be;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.resultados-grid > *:nth-child(odd) {
+  background: #404040be; /* impares */
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  height: 450px;
+  padding: 30px;
+ 
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.result-card i {
+  font-size: 4rem;
+  color: #404040be;
+}
+
+.result-card:nth-child(odd) i {
+  color: #000000;  /* naranja */
+  
+}
+
+.result-card .line {
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #404040be;
+}
+
+.result-card:nth-child(odd) .line {
+  background: #000000;  /* naranja */
+  
+}
+
+.result-card p {
+  font-size: .9em;
+}
+
+.result-card:last-child {
+    border-right: none;
+}
+
+.result-card-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.result-card-desc {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Alternar colores de los botones dentro de cada card */
+.result-card:nth-child(odd) .result-btn {
+  background: #000000;  /* naranja */
+  
+}
+
+/* .result-card:nth-child(even) .result-btn {
+  background: #000;  
+  color: #fff;
+} */
+
+.result-card:nth-child(odd) .result-btn:hover {
+  background: #d87f3b;
+}
+
+/* .result-card:nth-child(even) .result-btn:hover {
+  background: #333;
+} */
+
+/* --- BUTTONS --- */
+.result-btn {
+  min-width: 100px;
+  border: none;
+  background: #5a5a5a57;
+  backdrop-filter: blur(10px);
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.result-btn:hover {
+  background: #f3914cbe;
+  transition: all 0.7s ease;
+}
+
+/* --- MODAL --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 999;
+  cursor: default;
+}
+
+.modal-window {
+  background: #404040be;
+  padding: 40px;
+  width: 90%;
+  max-width: 750px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  animation: scaleIn 0.25s ease;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+  cursor: default;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  white-space: pre-line;
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btnss {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-close {
+  padding: 10px 25px;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.modal-close:hover {
+  background: #f3914c;
+}
+
+.agendart-btn {
+  padding: 10px 25px;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.agendart-btn:hover {
+  background: #f3914c;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

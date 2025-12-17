@@ -1,0 +1,73 @@
+.quienes-somos-section {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.quienes-somos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXTO */
+.quienes-somos-texto {
+  flex: 1;
+  color: #dbdbdb;
+}
+
+.quienes-somos-texto h2 {
+  font-family: 'Waterfall';
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.quienes-somos-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  color: #f3914cbe;
+}
+
+.quienes-somos-texto p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #cfcfcf;
+}
+
+/* IMAGEN */
+.quienes-somos-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.quienes-somos-img img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .quienes-somos-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quienes-somos-texto h2 {
+    font-size: 2.2rem;
+  }
+
+  .quienes-somos-img img {
+    max-width: 100%;
+  }
+}

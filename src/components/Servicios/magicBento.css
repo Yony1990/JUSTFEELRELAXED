@@ -371,13 +371,11 @@
   gap: -10px;
   font-weight: 100;
   line-height: 50px;
-  /* margin-bottom: -10px; */
-  /* line-height: .8; en mediaquery */
-  /* text-align: center; */
+  
 }
 
 .nomb span {
   
   font-size: .8rem;
-  color: #ffbc8bda;
+  color: #f3914cbe;
 }

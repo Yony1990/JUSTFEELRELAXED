@@ -12,14 +12,14 @@ import img7 from "../../assets/img/SpaSession-1.jpg";
 import img8 from "../../assets/img/SpaSession-17.jpg";
 
 const images = [
-  { src: img1, size: "medium", title: "Explorando", desc: "Belleza natural" },
-  { src: img2, size: "large", title: "Montañas", desc: "Altas y majestuosas" },
-  { src: img3, size: "large", title: "Arquitectura", desc: "Diseño moderno" },
-  { src: img4, size: "medium", title: "Paisaje", desc: "Horizonte sereno" },
-  { src: img5, size: "wide", title: "Costa", desc: "Arena y mar" },
-  { src: img6, size: "medium", title: "Café", desc: "Tardes tranquilas" },
-  { src: img7, size: "medium", title: "Ciudad", desc: "Calles con vida" },
-  { src: img8, size: "large", title: "Naturaleza", desc: "Fuerza salvaje" },
+  { src: img1, size: "medium" },
+  { src: img2, size: "large" },
+  { src: img3, size: "large" },
+  { src: img4, size: "medium" },
+  { src: img5, size: "wide" },
+  { src: img6, size: "medium" },
+  { src: img7, size: "medium" },
+  { src: img8, size: "large" },
 ];
 
 const Galery = () => {
@@ -49,8 +49,6 @@ const Galery = () => {
               <img src={img.src} alt={img.title} />
               <div className="overlay">
                 <div className="description">
-                  {/* <h3>{img.title}</h3>
-                  <p>{img.desc}</p> */}
                   <span className="cursor-target">TAKE A LOOK</span>
                 </div>
               </div>

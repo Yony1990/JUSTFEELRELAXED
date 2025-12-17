@@ -21,7 +21,6 @@
     position: relative;
     background-image: url(../../assets/img/portada111.png);
     background-size: cover;
-    
 }
 .Slogan {
     z-index: 10;
@@ -34,15 +33,11 @@
     align-items: end;
     padding-right: 500px;
     padding-bottom: 5%;
-    /* color: rgb(229, 229, 229); */
     font-size: 8rem;
     font-weight: 700;
     line-height: 15px;
-    
-
     background-image: url(../../assets/img/portada111.png);
-    background-size: cover;
-    
+    background-size: cover; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -56,9 +51,6 @@
     justify-content: center;
     align-items: center;
     padding-right: 700px;
-
-    /* padding-top: 100px; */
-    /* color: rgb(229, 229, 229); */
     font-size: 8rem;
     font-weight: 700;
     line-height: 15px;
@@ -78,7 +70,6 @@
     align-items: center;
     padding-left: 150px;
     padding-bottom: 300px;
-    /* padding-top: 100px; */
     color: rgba(216, 206, 192, 0.781);
     font-size: 8rem;
     font-weight: 700;
@@ -95,13 +86,10 @@
     justify-content: center;
     align-items: center;
     padding-left: 90px;
-    /* padding-top: 100px; */
-    /* color: rgba(203, 203, 203, 0.781); */
     font-weight: 700;
     line-height: 15px;
     
 }
-
 
 .somos .content-somos {
    
@@ -116,20 +104,3 @@
 .somos .content-somos p {
     z-index: 10;
 }
-
-/* .efecto-bajo {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    z-index: 1000;
-}
-
-.efecto-bajo .degradado {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    bottom: 0;
-    backdrop-filter: blur(1px);
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) .5%, rgba(0, 0, 0, 0) 80%);
-} */

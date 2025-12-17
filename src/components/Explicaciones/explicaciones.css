@@ -15,7 +15,8 @@
 .resultados-container .titulos span {
     font-family: 'Waterfall';
     font-size: 2.5rem;
-    color: #ffbc8bda;
+    /* color: #ffbc8bda; */
+    color: #f3914cbe;
 }
 
 .resultados-container .titulos h2 {

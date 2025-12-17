@@ -69,17 +69,36 @@ export default function UbicacionFaq() {
             <img src={map} alt="" /> 
           </div>
           <div className="container-other">
-            
+            <div className="horario">
+              <p>Horario</p>
+              <span>10am a 8pm</span> 
+            </div>
+            <div className="politica">
+              <h4>Nuestro Local</h4>
+              <ul>
+                <li>Ambiente climatizado</li>
+                <li>Música y aromas relajantes</li>
+                <li>Toallas esterilizadas</li>
+                <li>Productos premium</li>
+                <li>Experiencia profesional</li>
+              </ul>
+            </div>
           </div>
         </div>
         
 
         <div className="text-local">
-          <div className="info-card"></div>
+          <div className="info-card">
+            
+            <ul>
+              <li>Necesidad de reserva previa</li>
+              <li>Llegar 5-10 min antes</li>
+              <li>Atención solo con cita</li>
+              <li>Higiene estricta del local</li>
+              <li>Política de cancelaciones</li>
+            </ul>
+          </div>
           <div className="carruc-card"><Carrucel/></div>
-          {/* <p>          
-            En nuestro Local, ofrecemos un espacio profesional diseñado para brindar bienestar, confort y seguridad. Contamos con todas las herramientas y equipamiento necesarios para realizar masajes de manera precisa, efectiva y totalmente adaptada a las necesidades de cada persona. Trabajamos exclusivamente con productos premium, seleccionados por su calidad, pureza y beneficios reales para el cuerpo, garantizando una experiencia superior en cada sesión. Mantenemos un criterio estricto de higiene, asegurando que cada área del consultorio, camilla, materiales y utensilios se encuentren perfectamente desinfectados y preparados para tu atención. Nuestro compromiso es ofrecer un ambiente limpio, cuidado y profesional, donde puedas relajarte con total tranquilidad. En cada masaje nos enfocamos en brindar una atención dedicada, personalizada y de excelencia, para que disfrutes un momento de bienestar único en un entorno seguro y confiable.
-          </p> */}
        </div>
         
       </div>

@@ -107,7 +107,8 @@
 .testimonios-section h3 {
   margin-bottom: 20px;
   font-size: .8rem;
-  color: #ffbc8bda;
+  /* color: #ffbc8bda; */
+  color: #f3914cbe;
 }
 
 .testimonios-wrapper {

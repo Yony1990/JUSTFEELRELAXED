@@ -1,5 +1,6 @@
 import './App.css'
 import Portada from './components/Portada/portada'
+import Somos from './components/QuienesSomos/quienesSomos'
 import Header from "./components/Header/header";
 import Galery from "./components/Galeria/galery";
 import MagicBento from './components/Servicios/magicBento'
@@ -27,10 +28,9 @@ function App() {
     {
       id: "quienes-somos",
       content: (
-        <section className="segunda-seccion">
-          <h2>Quiénes Somos</h2>
-          <p>Somos un equipo apasionado por la innovación y la tecnología.</p>
-        </section>
+        <>
+          <Somos/>
+        </>
       ),
     },
     {

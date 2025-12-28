@@ -103,18 +103,12 @@
   
 }
 
-/* .result-card:nth-child(even) .result-btn {
-  background: #000;  
-  color: #fff;
-} */
 
 .result-card:nth-child(odd) .result-btn:hover {
   background: #d87f3b;
 }
 
-/* .result-card:nth-child(even) .result-btn:hover {
-  background: #333;
-} */
+
 
 /* --- BUTTONS --- */
 .result-btn {
@@ -158,9 +152,9 @@
   max-width: 750px;
   max-height: 85vh;
   overflow-y: auto;
-  border-radius: 12px;
+  border-radius: 20px;
   animation: scaleIn 0.25s ease;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 0 50px rgb(0, 0, 0);
   cursor: default;
 }
 

@@ -59,7 +59,7 @@ const ModalContacto = ({ isOpen, onClose }) => {
       <div className="modal-box">
         {!sent ? (
           <>
-            <h2>CONTANT</h2>
+            <h2>Contact</h2>
 
             <form onSubmit={handleSubmit}>
               <input type="text" name="from_name" placeholder="Tu nombre" required />

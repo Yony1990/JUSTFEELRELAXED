@@ -292,21 +292,7 @@
 }
 
 .btn-contratar {
-  /* background: transparent;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  font-weight: 600;
-  cursor: pointer;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0 6px 18px rgba(243,145,76,0.12), inset 0 -1px 0 rgba(255,255,255,0.03);
-  color: #fff;
-  transition: transform 180ms ease, box-shadow 180ms ease;
-  background-image: linear-gradient(90deg, rgba(243,145,76,0.14), rgba(243,145,76,0.06));
-  border: 1px solid rgba(243,145,76,0.18); */
 
- 
   min-width: 100px;
   border: none;
   background: #5a5a5a57;
@@ -322,9 +308,6 @@
 }
 
 .btn-contratar:hover {
-  /* transform: translateY(-2px); */
-  /* box-shadow: 0 10px 30px rgba(243,145,76,0.18); */
-
   background: #f3914cbe;
   transition: all 0.7s ease;
 }
@@ -345,13 +328,6 @@
   .card-grid {
     display: none;
   }
-  /* .card-curtain__inner {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 0;
-    transform: translateX(-100%);
-  }
-  .card-curtain { justify-content: flex-start; align-items: stretch; } */
 }
 
 /* Asegurá el stacking para que el contenido de la card quede visible encima si hace falta */

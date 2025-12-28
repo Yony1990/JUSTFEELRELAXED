@@ -1,0 +1,218 @@
+.equipo-hover-section {
+  width: 100%;
+  min-height: 100svh;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equipo-title {
+  /* font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 60px; */
+  font-family: 'Waterfall';
+  font-size: 4rem;
+  gap: -10px;
+  font-weight: 100;
+  
+}
+
+.spanEquipo {
+    position: relative;
+  font-size: .8rem;
+  /* color: #ffbc8bda; */
+  color: #f3914cbe;
+  margin-bottom: 60px;
+}
+
+/* CARDS */
+.equipo-cards {
+  
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.equipo-card { 
+  position: relative;
+}
+
+/* IMAGE */
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper img {
+  cursor: pointer;
+  height: 520px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform: translateY(0);
+  filter: drop-shadow(0 -15px 10px rgba(0, 0, 0, 0.682));
+}
+
+/* GRADIENT */
+.img-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.837),
+    transparent 45%
+  );
+  pointer-events: none;
+}
+
+/* NAME */
+.name-tag {
+    text-align: end;
+    
+  position: absolute;
+  top: 60px;
+  z-index: -1;
+  right: 63%;
+  margin-left: 15px;
+  white-space: nowrap;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.name-tag p {
+     /* font-family: 'Alumni Sans'; */
+     font-family: 'Dorsa';
+     
+     font-size: 15rem;
+     font-weight: 600;
+     letter-spacing: 15px;
+     position: relative;
+     /* right: 15px; */
+     left: 63%;
+     bottom: 100px;
+     text-transform: uppercase;
+     /* background-color: red; */
+     border-radius: 10px;
+    padding: 0px 20px;
+    
+}
+
+
+
+.name-tag span {
+    color: transparent;              /* sin relleno */
+  -webkit-text-stroke: 1px #f3924c; 
+  font-size: 1.5rem;
+  right: 0px;
+  position: relative;
+  bottom: 55px;
+}
+
+/* BUTTON CENTERED */
+.btn-vermas {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 1.1rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #f3924c;
+  box-shadow: 0 0 20px rgba(139, 139, 139, 0.255);
+  color: #000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  z-index: 3;
+}
+
+/* HOVER */
+.equipo-card:hover img {
+  transform: translateY(-20px) scale(1.08);
+  /* filter: drop-shadow(0 -85px 35px rgba(92, 92, 92, 0.6)); */
+  filter: drop-shadow(0 -135px 100px rgba(174, 174, 174, 0.29));
+}
+
+.equipo-card:hover .btn-vermas {
+  opacity: 1;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.681);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+  padding: 40px;
+  cursor: default;
+}
+
+.modal-text {
+  max-width: 380px;
+}
+
+.modal-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.modal-text p {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+/* AGENDAR */
+.btn-agendar {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #f3914cbe;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-img img {
+  height: 600px;
+}
+
+.modal-img {
+    position: relative;
+}
+
+.img-gradient-modal {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.837),
+    transparent 45%
+  );
+  pointer-events: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name-tag {
+    position: static;
+    margin-top: 10px;
+  }
+}

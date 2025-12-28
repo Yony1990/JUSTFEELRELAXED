@@ -11,6 +11,7 @@ import Agenda from './components/Agenda/agenda';
 import Explica from './components/Explicaciones/explicaciones';
 import Ubicac from './components/PreguntasFrecuentes/ubicacionFaq';
 import Footer from './components/Footer/footer';
+import Equipo from './components/EquipoTrabajo/equipo'
 
 
 
@@ -83,8 +84,7 @@ function App() {
       id: "equipo",
       content: (
         <>
-          <h2>Equipo</h2>
-          <p>Profesionales comprometidos con la excelencia.</p>
+          <Equipo/>
         </>
       ),
     },

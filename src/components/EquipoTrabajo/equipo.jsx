@@ -46,8 +46,8 @@ const EquipoHover = () => {
 
   return (
     <section className="equipo-hover-section">
-      <h4 className="equipo-title">Nuestro Equipo</h4>
-      <span className="spanEquipo">Profesionales en Bienestar</span>
+      <h4 className="equipo-title">Our Team</h4>
+      <span className="spanEquipo">Wellness Professionals</span>
 
       <div className="equipo-cards">
         {team.map((person, i) => (
@@ -60,11 +60,11 @@ const EquipoHover = () => {
                 className="btn-vermas cursor-target"
                 onClick={() => setActive(person)}
               >
-                Ver más
+                VIEW PROFILE
               </button>
             </div>
 
-            <div className="name-tag">
+            <div className="name-tag" data-index={i}>
               <p>{person.name}</p>
               {/* <span>{person.lastName}</span> */}
             </div>
@@ -80,7 +80,7 @@ const EquipoHover = () => {
               <h3>{active.lastName}</h3>
               <p>{active.info}</p>
 
-              <button className="btn-agendar">
+              <button className="btn-agendar cursor-target">
                 Agendar
               </button>
             </div>

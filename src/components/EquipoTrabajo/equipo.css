@@ -97,7 +97,13 @@
     
 }
 
+.name-tag[data-index="1"] p {
+  left: 68%;
+}
 
+.name-tag[data-index="2"] p {
+  left: 70%;
+}
 
 .name-tag span {
     color: transparent;              /* sin relleno */
@@ -113,7 +119,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 1.1rem;
+  font-size: .8rem;
   transform: translate(-50%, -50%);
   opacity: 0;
   padding: 10px 30px;

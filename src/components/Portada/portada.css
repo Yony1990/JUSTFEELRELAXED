@@ -49,15 +49,68 @@
   font-weight: 600;
 }
 
+.carousel-text h1 {
+  z-index: 900;
+  font-size: 6rem;
+  text-align: center;
+  opacity: 0;
+  animation: textFade2 2.5s 2s ease forwards;
+}
+
+.carousel-text .span-0 {
+  
+  font-family: 'Waterfall';
+  font-size: 4rem;
+  font-weight: 100;
+  animation: textFade 2s 1s ease forwards;
+}
+
 .carousel-text .span-1 {
+  margin-top: 10px;
 
 }
 
 .carousel-text .span-2 {
-
+  font-family: 'Poiret One';
+  font-weight: 500;
+  font-size: 1.5em;
+  animation: textFade2 3s 2.5s ease forwards;
 }
 
-.carousel-text h1, .carousel-text span {
+.carousel-text .span-3 a {
+  text-decoration: none;
+  color: #dbdbdb;
+  
+}
+
+.carousel-text .span-3 {
+  margin-top: 50px;
+  min-width: 100px; 
+  border: none;
+  background: #f3924c;
+  backdrop-filter: blur(10px);
+  color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  animation: textFade2 2s 3s ease forwards;
+}
+
+.carousel-text .span-3:hover {
+  background: #f3914cbe;
+  transition: all 0.7s ease;
+}
+
+
+
+
+
+.carousel-text span {
+  text-shadow: 0 0 50px rgb(193, 106, 63);
   z-index: 900;
   font-size: 2.2rem;
   text-align: center;
@@ -67,6 +120,38 @@
 
 /* Animación frase */
 @keyframes textFade {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes textFade1 {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes textFade2 {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes textFade3 {
   from {
     transform: translateY(40px);
     opacity: 0;

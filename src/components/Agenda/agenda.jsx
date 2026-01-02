@@ -8,27 +8,27 @@ export default function ComoAgendarme() {
     {
       id: "01",
       img: img1,
-      title: "ELEGÍS TU PROFESIONAL",
+      title: "CHOOSE YOUR PROFESSIONAL",
       icon: <i class="bi bi-person-raised-hand"></i>,
     },
     {
       id: "02",
       img: img2,
-      title: "ELEGÍS TU SERVICIO",
+      title: "CHOOSE YOUR SERVISE",
       icon: <i class="bi bi-hand-thumbs-up"></i>,
     },
     {
       id: "03",
       img: img3,
-      title: "TE AGENDAS",
+      title: "SCHEDULE YOUR APPOINTMENT",
       icon: <i class="bi bi-journal-check"></i>,
     },
   ];
 
   return (
     <section className="agendarme-section">
-      <p className="agendarme-subtitle">3 Simples Pasos</p>
-      <h2 className="agendarme-title">¿CÓMO AGENDARME?</h2>
+      <p className="agendarme-subtitle">3 Simple Steps</p>
+      <h2 className="agendarme-title">HOW TO BOOK?</h2>
 
       <div className="steps-wrapper">
         <div className="container-linea">
@@ -69,7 +69,7 @@ export default function ComoAgendarme() {
       </div>
 
       <div className="btn-wrapper">
-        <button className="btn-agendar cursor-target">AGENDARME</button>
+        <button className="btn-agendar cursor-target">BOOK NOW</button>
       </div>
     </section>
   );

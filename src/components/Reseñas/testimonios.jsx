@@ -114,8 +114,8 @@ const Testimonios = () => {
 
   return (
     <section className="testimonios-section" id="testimonios">
-      <h2 className="testimonios-title">Testimonios Sobre Nosotros</h2>
-      <h3>“Opiniones sinceras, resultados auténticos.”</h3>
+      <h2 className="testimonios-title">Testimonials</h2>
+      <h3>“Honest Reviews, Authentic Results”</h3>
 
 
       <div className="container-carrucel">
@@ -127,9 +127,9 @@ const Testimonios = () => {
             <div className="name-Team" >
               <h4>JUST FEEL RELAXED</h4> 
               <div className="value-Team"><span className="number-clasif">5.0</span> ⭐⭐⭐⭐⭐</div>
-              <span>Basado en 20 reseñas</span>
+              <span>Based on 20 Reviews</span>
               <img src={google2} alt="" />
-              <button className="cursor-target">Valoranos en <img src={google} alt="" /></button>
+              <button className="cursor-target">Rate Us On <img src={google} alt="" /></button>
             </div>
           </div>
         </div>
@@ -177,50 +177,18 @@ const Testimonios = () => {
           </div>
         </div>
 
-
       </div>
-      
-
-      {/* <div className="testimonios-wrapper" ref={scrollRef}>
-
-        <div className="testimonios-carousel">
      
-          {testimonios.map((item, index) => (
-            <div className="testimonio-card" key={index}>
-              <img src={item.avatar} alt={item.nombre} className="avatar" />
-
-              <p className="testimonio-text">{item.texto}</p>
-
-              <h4 className="testimonio-nombre">{item.nombre}</h4>
-
-              <div className="testimonio-estrellas">
-                {Array.from({ length: item.estrellas }).map((_, i) => (
-                  <span key={i}>⭐</span>
-                ))}
-              </div>
-            </div>
-          ))}
-
-       
-          {testimonios.map((item, index) => (
-            <div className="testimonio-card" key={`dup-${index}`}>
-              <img src={item.avatar} alt={item.nombre} className="avatar" />
-
-              <p className="testimonio-text">{item.texto}</p>
-
-              <h4 className="testimonio-nombre">{item.nombre}</h4>
-
-              <div className="testimonio-estrellas">
-                {Array.from({ length: item.estrellas }).map((_, i) => (
-                  <span key={i}>⭐</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
       <div className="descrip">
-        <p>En<span> JUST FEEL RELAXED</span>, nos enorgullece saber que nuestros clientes nos aman. Esto se debe a nuestra inquebrantable dedicación a la calidad y eficiencia en cada tratamiento que ofrecemos. Nos esforzamos por proporcionar resultados excepcionales, asegurando que cada visita sea una experiencia rejuvenecedora. Creemos firmemente en la importancia de crear un ambiente cálido y relajante, donde nuestros clientes pueden escapar del estrés diario. Cada detalle está pensado para que se sientan valorados y cuidados, porque su bienestar es nuestra prioridad. Gracias por confiar en nosotros para su relajación y cuidado personal.</p>
+        <p>
+        
+        {/* En JUST FEEL RELAXED, nos enorgullece saber que nuestros clientes nos aman. Esto se debe a nuestra inquebrantable dedicación a la calidad y eficiencia en cada tratamiento que ofrecemos. Nos esforzamos por proporcionar resultados excepcionales, asegurando que cada visita sea una experiencia rejuvenecedora. Creemos firmemente en la importancia de crear un ambiente cálido y relajante, donde nuestros clientes pueden escapar del estrés diario. Cada detalle está pensado para que se sientan valorados y cuidados, porque su bienestar es nuestra prioridad. Gracias por confiar en nosotros para su relajación y cuidado personal. */}
+        
+        {/* At<span> JUST FEEL RELAXED</span>, we take pride in knowing that our clients love us. This is thanks to our unwavering commitment to quality and efficiency in every treatment we offer. We strive to deliver exceptional results, ensuring that each visit is a rejuvenating experience. We firmly believe in the importance of creating a warm and relaxing environment where our clients can escape the stresses of daily life. Every detail is designed to make them feel valued and cared for, because their well-being is our top priority. Thank you for trusting us with your relaxation and personal care. */}
+
+        At<span>  JUST FEEL RELAXED</span>, we’re proud that our clients love what we do. It’s all thanks to our dedication to providing high-quality, effective treatments every time. We focus on delivering outstanding results and ensuring that every visit feels like a rejuvenating escape. We create a warm, relaxing atmosphere where clients can leave daily stress behind. Every detail is designed to make you feel valued and cared for—because your well-being is our priority. Thank you for trusting us to take care of your relaxation and self-care.
+        
+        </p>
       </div>
     </section>
   );

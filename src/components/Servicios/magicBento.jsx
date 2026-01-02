@@ -500,8 +500,8 @@ const magicBento = ({
   return (
     <div className='Servi'>
       <div className="nomb">
-        <h2>Servicios de Bienestar</h2>
-        <span>“Relaja tu mente, renueva tu energía”</span>
+        <h2>Wellness Services</h2>
+        <span>“Relax Your Mind, Renew Your Energy”</span>
       </div>
       {enableSpotlight && (
         <GlobalSpotlight

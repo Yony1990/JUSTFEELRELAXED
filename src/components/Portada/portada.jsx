@@ -2,33 +2,35 @@ import { useState, useEffect, useRef } from "react";
 import img from "../../assets/img/portada111.png";
 import img2 from "../../assets/img/SpaSession-1.jpg";
 import img3 from "../../assets/img/SpaSession-13.jpg";
-// import Principal from '../Principal/principal'
 import "./portada.css";
 
 const slides = [
   {
     id: 1,
     img: img,
-    text: "Consultorio Estetico",
+    textIntro: "Aesthetic Clinic",
+    text: "",
     text2: "JUST FEEL RELAXED",
-    text3: "Estética y Masajes con un enfoque personalizado",
-    
+    text3: "Aesthetics and Massage with a Personalized Approach",
+    btn: <a href="#servicios">Our Services</a>,
   },
   {
     id: 2,
     img: img2,
-    text: "Masajes terapéuticos para cuerpo y alma",
+    textIntro: "Tailored to You",
+    text: "Healing Massage for Body and Soul",
     text2: "",
-    text3: "",
-    btn: <a href=""></a>,
+    text3: "We Identify Your Needs and Personalize Your Massage",
+    btn: <a href="#explica">Customized Massage</a>,
   },
   {
     id: 3,
     img: img3,
-    text: "Experiencia spa de lujo para ti",
+    textIntro: "Gift Card",
+    text: "The perfect gift starts with our gift cards",
     text2: "",
-    text3: "",
-    btn: <a href=""></a>,
+    text3: "Give Freedom, Give an Experience",
+    btn: <a href="">Buy a Gift Card</a>,
   },
 ];
 
@@ -66,9 +68,12 @@ export default function portada() {
 
               <div className="carousel-text">
                   {/* ESTA KEY reinicia la animación del texto 👍 */}
-                  <span className=".span-1" key={index + "-text"}>{s.text}</span>
+                  
+                  <span className="span-0" data-index={i} key={index + "-textIntro"}>{s.textIntro}</span>
+                  <span className="span-1" key={index + "-text"}>{s.text}</span>
                   <h1 key={index + "-text2"}>{s.text2}</h1>
-                  <span className=".span-2" key={index + "-text3"}>{s.text3}</span>
+                  <span className="span-2" key={index + "-text3"}>{s.text3}</span>
+                  <span className="span-3 cursor-target" key={index + "-btn"}>{s.btn}</span>
               </div>
               
             </div>
@@ -84,8 +89,6 @@ export default function portada() {
           ></div>
         ))}
       </div>
-
-      {/* <Principal/> */}
     </div>
   );
 }

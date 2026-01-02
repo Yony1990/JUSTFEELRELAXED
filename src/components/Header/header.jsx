@@ -4,17 +4,13 @@ import Contact from '../Contacto/contacto';
 import Logo from '../../assets/img/logoSinFondo.png';
 
 const sections = [
-  { id: "inicio", label: "Inicio" },
-  { id: "quienes-somos", label: "Somos" },
-  { id: "servicios", label: "Servicios" },
-  { id: "galeria", label: "Galería" },
-  // { id: "proyectos", label: "Proyectos" },
-  { id: "equipo", label: "Equipo" },
-  // { id: "blog", label: "Blog" },
-  { id: "testimonios", label: "Testimonios" },
-  
-  { id: "faq", label: "Preguntas" },
-  // { id: "contacto", label: "Contacto" },
+  { id: "inicio", label: "Home" },
+  { id: "quienes-somos", label: "About Us" },
+  { id: "servicios", label: "Services" },
+  { id: "galeria", label: "Galery" },
+  { id: "equipo", label: "Team" },
+  { id: "testimonios", label: "Reviews" },
+  { id: "faq", label: "Questions" },
 ];
 
 

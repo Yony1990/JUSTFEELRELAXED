@@ -33,7 +33,7 @@ const Galery = () => {
 
       <div className="nombGale">
           <h2>Galery</h2>
-          <span>“Detalles que cuentan nuestra esencia.”</span>
+          <span>“Details That Reflect Our Essence”</span>
       </div>
 
 

@@ -27,7 +27,7 @@ const Contacto = () => {
             className="cursor-target contact-btn-header"
             onClick={() => setOpen(!open)}
           >
-            Contacto
+            Contact
           </div>
 
           <ul className={`content-redes-social ${open ? "open" : ""}`}>

@@ -76,6 +76,7 @@ const EquipoHover = () => {
       {active && (
         <div className="modal-overlay" onClick={() => setActive(null)}>
           <div className="modal-content">
+          
             <div className="modal-text">
               <h3>{active.lastName}</h3>
               <p>{active.info}</p>

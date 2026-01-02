@@ -163,6 +163,9 @@
   max-width: 900px;
   padding: 40px;
   cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-text {

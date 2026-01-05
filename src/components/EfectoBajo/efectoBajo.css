@@ -3,7 +3,7 @@
     height: 50px;
     bottom: 0;
     position: fixed;
-    z-index: 500;
+    z-index: 1000;
 }
 
 .efectoBajo .Bdegradado {

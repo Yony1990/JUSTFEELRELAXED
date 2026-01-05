@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./efectoBajo.css";
+import Contact111 from '../Contacto/contacto';
 import img3 from "../../assets/img/fondoWhatsap.jpg";
 
 const EfectoBajo = () => {
@@ -7,34 +8,29 @@ const EfectoBajo = () => {
   const [open, setOpen] = useState(false);
   const modalRef = useRef(null);
 
-  useEffect(() => {
-    const objetivo = document.querySelector(".segunda-seccion");
-    if (!objetivo) return;
+useEffect(() => {
+  if (!iconRef.current) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            iconRef.current?.classList.add("icon-visible");
-          } else {
-            const top = entry.boundingClientRect.top;
-            if (top > 0) {
-              iconRef.current?.classList.remove("icon-visible");
-              setOpen(false); // si vuelve arriba, cerrar ventana
-            } else {
-              iconRef.current?.classList.add("icon-visible");
-            }
-          }
-        });
-      },
-      { threshold: 0.4 }
-    );
+  const triggerY = window.innerHeight * 0.8;
 
-    observer.observe(objetivo);
-    return () => observer.disconnect();
-  }, []);
+  const handleScroll = () => {
+    const scrollY = window.scrollY || window.pageYOffset;
 
-  // Cerrar si se hace click fuera
+    if (scrollY > triggerY) {
+      iconRef.current.classList.add("icon-visible");
+    } else {
+      iconRef.current.classList.remove("icon-visible");
+      setOpen(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // estado inicial correcto
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
   useEffect(() => {
     const handleClick = (e) => {
       if (open && modalRef.current && !modalRef.current.contains(e.target)) {
@@ -50,20 +46,21 @@ const EfectoBajo = () => {
     <div className="efectoBajo">
       <div className="Bdegradado" />
 
-      {/* ICONO WHATSAPP */}
       <i
         ref={iconRef}
-        className="bi bi-whatsapp cursor-target icono-wsp"
+        className="bi bi-whatsapp cursor-target icono-wsp2"
         onClick={() => setOpen(true)}
       />
 
-      {/* VENTANA WHATSAPP */}
+      <div className="contactMobil111">
+        <Contact111/>
+      </div>
+
       {open && (
         <div className="wsp-modal" ref={modalRef}>
           <div className="wsp-header">
             <i className="bi bi-whatsapp wsp-logo"></i>
             <span>WhatsApp</span>
-            {/* <i className="cursor-target bi bi-x close-btn " onClick={() => setOpen(false)}></i> */}
           </div>
 
           <div className="wsp-body">

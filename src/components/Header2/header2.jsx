@@ -1,23 +1,30 @@
 import React, { useState, useEffect } from "react";
-import "./header.css";
+import "./header2.css";
 import Logo from '../../assets/img/logoSinFondo.png';
 
 const sections = [
-  { id: "inicio", label: "Inicio" },
-  { id: "quienes-somos", label: "Somos" },
-  { id: "servicios", label: "Servicios" },
-  // { id: "proyectos", label: "Proyectos" },
-  { id: "equipo", label: "Equipo" },
-  { id: "blog", label: "Blog" },
-  { id: "testimonios", label: "Testimonios" },
-  { id: "galeria", label: "Galería" },
-  { id: "faq", label: "Preguntas" },
-  // { id: "contacto", label: "Contacto" },
+  // { id: "inicio", label: "Inicio" },
+  // { id: "quienes-somos", label: "Somos" },
+  // { id: "servicios", label: "Servicios" },
+
+  // { id: "equipo", label: "Equipo" },
+  // { id: "blog", label: "Blog" },
+  // { id: "testimonios", label: "Testimonios" },
+  // { id: "galeria", label: "Galería" },
+  // { id: "faq", label: "Preguntas" },
+
+  { id: "inicio", label: "Home" },
+  { id: "quienes-somos", label: "About Us" },
+  { id: "servicios", label: "Services" },
+  { id: "galeria", label: "Galery" },
+  { id: "equipo", label: "Team" },
+  { id: "testimonios", label: "Reviews" },
+  { id: "faq", label: "Questions" },
 ];
 
 
 
-export default function header() {
+export default function header2() {
   const [activeSection, setActiveSection] = useState("inicio");
   const [activeMenu, setActiveMenu] = useState(false);
 
@@ -57,29 +64,29 @@ export default function header() {
 
   return (
   
-    <div className='header'>
-        <img className="logo" src={Logo} alt="" />
-        <div className="menu">
+    <div className='header2'>
+        {/* <img className="logo" src={Logo} alt="" /> */}
+        <div className="menu2 cursor-target">
           <button onClick={showMenu}>
-           <span>Menu</span>
+           <span>X</span>
           </button>
         </div>
         {/* <div className="contact">
           <button className="nav-btn-contact">Contacto</button>
         </div> */}
-        <div className={activeMenu ? "GlassContainer-si" : "GlassContainer-no" }>
+        <div className={activeMenu ? "GlassContainer-si2" : "GlassContainer-no2" }>
 
-          <div onClick={showMenu} className="GlassContent-si">
+          <div onClick={showMenu} className="GlassContent-si2">
             
-              <nav className="nav">
-                {/* <div className="logo">Mi Web</div> */}
-                <ul className="nav-links">
+              <nav className="nav2">
+               
+                <ul className="nav-links2">
                   {sections.map((section) => (
                     <li key={section.id}>
                       <button
                         onClick={() => scrollToSection(section.id)}
-                        className={`nav-btn ${
-                          activeSection === section.id ? "active" : ""
+                        className={`nav-btn2 ${
+                          activeSection === section.id ? "active cursor-target" : "cursor-target"
                         }`}
                       >
                         {section.label}
@@ -90,7 +97,7 @@ export default function header() {
               </nav>
           </div>
           
-          <div className="GlassMaterial">
+          {/* <div className="GlassMaterial">
               <div className="GlassEdgeReflection"></div>
               <div className="GlassEmbossReflection"></div>
               <div className="GlassRefraction"></div>
@@ -101,10 +108,10 @@ export default function header() {
               <div className="Tint"></div>
               <div className="Contrast"></div>
               <div className="Brightness"></div>
-          </div>
+          </div> */}
         </div>
         
-    </div>
+     </div>
     
   );
 }

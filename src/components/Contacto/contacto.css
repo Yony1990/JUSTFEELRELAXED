@@ -45,7 +45,6 @@
     position: relative;
     left: 40px;
     top: 10px;
-
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -103,3 +102,33 @@
 .content-redes-social.open li:nth-child(3) { transition-delay: .25s; }
 .content-redes-social.open li:nth-child(4) { transition-delay: .35s; }
 
+.contact-btn-header i {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+  .container-contacto {
+    position: absolute;
+    right: -35px;
+    top: -20px;
+
+  }
+
+  .contact-btn-header {
+    min-width: 0px;
+    padding: 8px 18px;
+  }
+
+  .contact-btn-header span {
+    display: none;
+  }
+
+  .contact-btn-header i {
+    display: flex;
+  }
+  
+  .content-redes-social {
+    left: 20px;
+    top: -200px;
+  }
+}

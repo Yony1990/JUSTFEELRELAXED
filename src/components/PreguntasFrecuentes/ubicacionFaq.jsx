@@ -4,50 +4,52 @@ import Carrucel from "../CarrucelLOcal/carruselLocal";
 import map from '../../assets/img/map2.png';
 
 export default function UbicacionFaq() {
+
   const faqs = [
     {
-      question: "¿Necesito reservar con anticipación?",
-      answer: "Sí, recomendamos reservar al menos con un día de anticipación para asegurar tu horario preferido.",
+      question: "Is Advance Booking Required?",
+      answer: "Yes, we suggest making your reservation at least one day in advance to ensure availability.",
     },
     {
-      question: "¿Puedo pagar con tarjeta?",
-      answer: "Sí, aceptamos tarjetas de débito, crédito y pagos digitales.",
+      question: "Do You Accept Card Payments?",
+      answer: "Yes, we accept debit and credit cards, as well as digital payment methods.",
     },
     {
-      question: "¿Qué debo llevar a mi sesión?",
-      answer: "Nada especial, solo ropa cómoda. Nosotros proporcionamos todo lo necesario.",
+      question: "What Do I Need to Bring to My Appointment?",
+      answer: "You don’t need to bring anything special, just comfortable clothes. We take care of the rest.",
     },
     {
-      question: "¿Puedo cancelar una reserva?",
-      answer: "Sí, puedes cancelar con al menos 3 horas de anticipación sin penalización.",
+      question: "Is It Possible to Cancel a Booking?",
+      answer: "Yes, you can cancel at least 3 hours in advance with no penalty.",
     },
     {
-      question: "¿Hay masajes para embarazadas?",
-      answer: "Sí, contamos con masajes específicos para embarazadas mayores a 12 semanas.",
+      question: "Do You Offer Prenatal Massages?",
+      answer: "Yes, we provide prenatal massages specifically designed for women who are over 12 weeks pregnant.",
     },
     {
-      question: "¿Los masajes son realizados por profesionales?",
-      answer: "Sí, todos nuestros terapeutas están certificados y cuentan con experiencia.",
+      question: "Are the Massages Performed by Professionals?",
+      answer: "Yes, all our therapists are certified and experienced.",
     },
     {
-      question: "¿Cuánto dura una sesión?",
-      answer: "La mayoría de los masajes duran entre 45 y 60 minutos, dependiendo del servicio.",
+      question: "How Long Does a Session Last?",
+      answer: "The duration of most massages ranges from 45 to 60 minutes, depending on the treatment.",
     },
     {
-      question: "¿Qué pasa si llego tarde?",
-      answer: "La sesión puede verse reducida para respetar el horario de los siguientes clientes.",
+      question: "What Happens If I’m Late for My Appointment?",
+      answer: "If you arrive late, the session duration may be reduced to accommodate the following appointments.",
     },
     {
-      question: "¿Puedo elegir masajista hombre o mujer?",
-      answer: "Sí, al momento de agendar puedes elegir el profesional que prefieras.",
+      question: "Can I Choose a Male or Female Therapist?",
+      answer: "Sí, al realizar la reserva podrás seleccionar el profesional de tu preferencia.",
     },
     {
-      question: "¿Tienen estacionamiento?",
-      answer: "Sí, contamos con estacionamiento gratuito para clientes del spa.",
+      question: "Is Parking Available?",
+      answer: "Yes, we offer free parking for spa clients.",
     },
   ];
 
   const [openIndex, setOpenIndex] = useState(0);
+  const [showPolicyModal, setShowPolicyModal] = useState(false);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -56,57 +58,67 @@ export default function UbicacionFaq() {
   return (
     <section className="ubicacionfaq-section">
 
-      {/* LADO IZQUIERDO: MAPA */}
       <div className="map-container">
 
-        <h2 className="map-title">Donde Encontrarnos</h2>
+        <h2 className="map-title">Find Us</h2>
         <span className="direcctionss">Peders Skrams Gade 11, Copenhague Dinamarca</span>
-        
+
         <div className="container-all-map">
           <div className="map-card">
-            <a href="https://maps.app.goo.gl/b5gLfcRBSwc5tnan8"><span className="cursor-target">WE ARE HERE</span></a>
+            <a href="https://maps.app.goo.gl/b5gLfcRBSwc5tnan8">
+              <span className="cursor-target">WE ARE HERE</span>
+            </a>
             <div className="degrade"></div>
-            <img src={map} alt="" /> 
+            <img src={map} alt="" />
           </div>
+
           <div className="container-other">
             <div className="horario">
-              <p>Horario</p>
-              <span>10am a 8pm</span> 
+              <p>Business Hours</p>
+              <span>10am a 8pm</span>
             </div>
+
             <div className="politica">
-              <h4>Nuestro Local</h4>
+              <h4>Our Space</h4>
               <ul>
-                <li>Ambiente climatizado</li>
-                <li>Música y aromas relajantes</li>
-                <li>Toallas esterilizadas</li>
-                <li>Productos premium</li>
-                <li>Experiencia profesional</li>
+                <li>Climate-Controlled Environment</li>
+                <li>Soothing Music and Relaxing Scents</li>
+                <li>Sanitized Towels</li>
+                <li>Premium Products</li>
+                <li>Professional Experience</li>
               </ul>
             </div>
           </div>
         </div>
-        
 
         <div className="text-local">
           <div className="info-card">
-            
             <ul>
-              <li>Necesidad de reserva previa</li>
-              <li>Llegar 5-10 min antes</li>
-              <li>Atención solo con cita</li>
-              <li>Higiene estricta del local</li>
-              <li>Política de cancelaciones</li>
+              <li>Advance Booking Required</li>
+              <li>Arrive 5–10 Minutes Early</li>
+              <li>By Appointment Only</li>
+              <li>Strict Sanitation Protocols</li>
+
+              {/* ACTIVADOR DEL MODAL */}
+              <li
+                className="cursor-target"
+                onClick={() => setShowPolicyModal(true)}
+              >
+                Cancellation Policy
+              </li>
+
             </ul>
           </div>
-          <div className="carruc-card"><Carrucel/></div>
-       </div>
-        
+
+          <div className="carruc-card">
+            <Carrucel />
+          </div>
+        </div>
       </div>
 
-      {/* LADO DERECHO: FAQ */}
       <div className="faq-container">
-        <h2 className="faq-title">Preguntas Frecuentes</h2>
-        <span className="client-pregunt">Accede fácilmente a la información que necesitas saber</span>
+        <h2 className="faq-title">Frequently Asked Questions</h2>
+        <span className="client-pregunt">Easily Access the Information You Need</span>
 
         <div className="faq-list">
           {faqs.map((item, index) => (
@@ -121,16 +133,65 @@ export default function UbicacionFaq() {
                 </span>
               </div>
 
-              <div
-                className={`faq-answer ${openIndex === index ? "open" : ""}`}
-              >
+              <div className={`faq-answer ${openIndex === index ? "open" : ""}`}>
                 <p>{item.answer}</p>
               </div>
             </div>
           ))}
         </div>
-
       </div>
+
+      {/* ================= MODAL ================= */}
+      {showPolicyModal && (
+        <div
+          className="policy-modal-overlay"
+          onClick={() => setShowPolicyModal(false)}
+        >
+          <div
+            className="policy-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2>Complaints Policy (Summary)</h2>
+
+            <p>
+              Our clinic is committed to providing a professional and high-quality service.
+              If you believe your experience did not meet expectations, you may submit a
+              complaint through the following channels: in person at reception, by email,
+              via our website contact form, or through WhatsApp.
+            </p>
+
+            <p>
+              Complaints must be submitted within 72 hours of the service date and should
+              include your full name, service date and time, and a brief description of the issue.
+            </p>
+
+            <p>
+              All complaints are reviewed confidentially, and a response will be provided
+              within 5 business days. Depending on the case, we may offer a service repeat,
+              a service credit, or other appropriate corrective measures.
+            </p>
+
+            <p>
+              Refunds are not issued once a service has started or been completed, unless
+              required by applicable law.
+            </p>
+
+            <p>
+              By booking or receiving our services, you agree to this Complaints Policy.
+            </p>
+
+            <div className="policy-modal-actions">
+              <button className="btn-cancel">Cancel Appointment</button>
+              <button
+                className="btn-close"
+                onClick={() => setShowPolicyModal(false)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
     </section>
   );

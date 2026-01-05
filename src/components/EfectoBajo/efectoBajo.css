@@ -1,5 +1,3 @@
-/* ------------------------------- */
-/* TU CÓDIGO ORIGINAL */
 .efectoBajo {
     width: 100%;
     height: 50px;
@@ -19,8 +17,15 @@
     mask-image: linear-gradient(to bottom, transparent, black);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 90%);
 }
+/* 
+.icono-wsp2 {
+  color: red !important;
+} */
 
-.icono-wsp {
+.icono-wsp2 {
+    opacity: 0;
+    pointer-events: none;
+    color: #404040;
     position: absolute;
     font-size: 2rem;
     width: 2.5rem;
@@ -29,7 +34,6 @@
     right: 20px;
     bottom: 20px;
     cursor: pointer;
-    opacity: 0;
     transform: translateY(20px);
     transition: opacity .5s ease, transform .5s ease, color .3s ease;
 }
@@ -37,9 +41,10 @@
 .icon-visible {
     opacity: 1;
     transform: translateY(0);
+    pointer-events:visible;
 }
 
-.icono-wsp:hover {
+.icono-wsp2:hover {
     color: green;
 }
 
@@ -55,7 +60,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background: #282828; */
     background-image: url(../../assets/img/fondoWhatsap.jpg);
     background-size: cover;
     border-radius: 20px;
@@ -91,21 +95,6 @@
     font-size: 1.4rem;
     margin-right: 10px;
 }
-
-/* .close-btn {
-    position: absolute;
-    padding: 4px 6px;  
-    border-radius: 50%;
-    right: 15px;
-    cursor: pointer;
-    font-size: 1.35rem;
-    transition: .2s ease;
-    background-color: rgba(47, 55, 43, 0.743);
-}
-
-.close-btn:hover {
-    opacity: .7;
-} */
 
 /* CUERPO */
 .wsp-body {
@@ -147,4 +136,17 @@
 
 .wsp-button:hover {
     filter: brightness(1.2);
+}
+
+.contactMobil111 {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+  .icono-wsp2 {
+    display: none;
+  }
+  .contactMobil111 {
+    display: flex;
+  }
 }

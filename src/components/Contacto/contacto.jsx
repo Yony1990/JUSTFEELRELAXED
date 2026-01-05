@@ -7,7 +7,6 @@ const Contacto = () => {
   const [openModal, setOpenModal] = useState(false);
   const menuRef = useRef(null)
 
-  // Cerrar si clickea fuera
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -18,6 +17,10 @@ const Contacto = () => {
     return () => document.removeEventListener("click", handleClickOutside)
   }, [])
 
+  const handleItemClick = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       <div className='container-contacto'>
@@ -27,14 +30,32 @@ const Contacto = () => {
             className="cursor-target contact-btn-header"
             onClick={() => setOpen(!open)}
           >
-            Contact
+            <span>Contact</span>
+            <i className="bi bi-person-lines-fill"></i>
           </div>
 
           <ul className={`content-redes-social ${open ? "open" : ""}`}>
-            <li className='cursor-target'><span><i className="bi bi-whatsapp"></i></span></li>
-            <li className='cursor-target'  onClick={() => setOpenModal(true)}><span><i className="bi bi-envelope-at"></i></span></li>
-            <li className='cursor-target'><span><i className="bi bi-instagram"></i></span></li>
-            <li className='cursor-target'><span><i className="bi bi-youtube"></i></span></li>
+            <li className='cursor-target' onClick={handleItemClick}>
+              <span><i className="bi bi-whatsapp"></i></span>
+            </li>
+
+            <li
+              className='cursor-target'
+              onClick={() => {
+                setOpenModal(true);
+                setOpen(false);
+              }}
+            >
+              <span><i className="bi bi-envelope-at"></i></span>
+            </li>
+
+            <li className='cursor-target' onClick={handleItemClick}>
+              <span><i className="bi bi-instagram"></i></span>
+            </li>
+
+            <li className='cursor-target' onClick={handleItemClick}>
+              <span><i className="bi bi-youtube"></i></span>
+            </li>
           </ul>
 
         </div>

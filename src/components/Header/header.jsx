@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import Contact from '../Contacto/contacto';
+import HeaderMobil from '../Header2/header2';
 import Logo from '../../assets/img/logoSinFondo.png';
 
 const sections = [
@@ -79,6 +80,9 @@ export default function header() {
             <button className="nav-btn-contact cursor-target">Contacto</button>
           </div>
           <Contact/>
+        </div>
+        <div className="headerMobil">
+          <HeaderMobil/>
         </div>
               
           

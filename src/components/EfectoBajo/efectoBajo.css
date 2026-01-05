@@ -17,10 +17,6 @@
     mask-image: linear-gradient(to bottom, transparent, black);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 90%);
 }
-/* 
-.icono-wsp2 {
-  color: red !important;
-} */
 
 .icono-wsp2 {
     opacity: 0;
@@ -38,7 +34,21 @@
     transition: opacity .5s ease, transform .5s ease, color .3s ease;
 }
 
+.contactMobil111 {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity .5s ease, transform .5s ease, color .3s ease;
+}
+
 .icon-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events:visible;
+}
+
+.icon-visible2 {
     opacity: 1;
     transform: translateY(0);
     pointer-events:visible;
@@ -136,10 +146,6 @@
 
 .wsp-button:hover {
     filter: brightness(1.2);
-}
-
-.contactMobil111 {
-    display: none;
 }
 
 @media (max-width: 1000px) {

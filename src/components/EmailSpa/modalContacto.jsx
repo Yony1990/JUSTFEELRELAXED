@@ -19,13 +19,7 @@ const ModalContacto = ({ isOpen, onClose }) => {
     setLoading(true);
 
     const formData = new FormData(e.target);
-
-    // const templateParams = {
-    //   nombre: formData.get("from_name"),
-    //   correo: formData.get("reply_to"),
-    //   mensaje: formData.get("message"),
-    // };
-
+    
     const templateParams = {
       from_name: formData.get("from_name"),
       reply_to: formData.get("reply_to"),
@@ -55,7 +49,7 @@ const ModalContacto = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="modal-overlay" onClick={handleBackgroundClick}>
+    <div className="modal-overlay1" onClick={handleBackgroundClick}>
       <div className="modal-box">
         {!sent ? (
           <>

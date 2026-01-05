@@ -5,30 +5,53 @@ import img3 from "../../assets/img/fondoWhatsap.jpg";
 
 const EfectoBajo = () => {
   const iconRef = useRef(null);
+  const iconRef2 = useRef(null);
   const [open, setOpen] = useState(false);
   const modalRef = useRef(null);
 
-useEffect(() => {
-  if (!iconRef.current) return;
+  useEffect(() => {
+    if (!iconRef.current) return;
 
-  const triggerY = window.innerHeight * 0.8;
+    const triggerY = window.innerHeight * 0.8;
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY || window.pageYOffset;
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
 
-    if (scrollY > triggerY) {
-      iconRef.current.classList.add("icon-visible");
-    } else {
-      iconRef.current.classList.remove("icon-visible");
-      setOpen(false);
-    }
-  };
+      if (scrollY > triggerY) {
+        iconRef.current.classList.add("icon-visible");
+      } else {
+        iconRef.current.classList.remove("icon-visible");
+        setOpen(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  handleScroll(); // estado inicial correcto
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // estado inicial correcto
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!iconRef2.current) return;
+
+    const triggerY = window.innerHeight * 0.8;
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      if (scrollY > triggerY) {
+        iconRef2.current.classList.add("icon-visible2");
+      } else {
+        iconRef2.current.classList.remove("icon-visible2");
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
 
   useEffect(() => {
@@ -44,7 +67,7 @@ useEffect(() => {
 
   return (
     <div className="efectoBajo">
-      <div className="Bdegradado" />
+      <div className="Bdegradado"></div>
 
       <i
         ref={iconRef}
@@ -52,7 +75,7 @@ useEffect(() => {
         onClick={() => setOpen(true)}
       />
 
-      <div className="contactMobil111">
+      <div ref={iconRef2} className="contactMobil111">
         <Contact111/>
       </div>
 

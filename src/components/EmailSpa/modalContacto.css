@@ -1,17 +1,12 @@
-.modal-overlay {
+.modal-overlay1 {
   position: fixed;
   inset: 0;
-
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(8px);
-
-  /* background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(6px); */
+  background: rgba(0, 0, 0, 0.821);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
   animation: fadeIn .3s ease;
-  z-index: 2000;
 }
 
 .modal-box {
@@ -117,4 +112,19 @@
 @keyframes slideUp {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 1000px) {
+  .modal-overlay1 {
+    top: 0px;
+    left: 0;
+    background-color: red;
+    z-index: 1000;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .modal-box {
+    background: #404040;
+  }
 }

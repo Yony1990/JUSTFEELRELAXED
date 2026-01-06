@@ -1,9 +1,10 @@
 .quienes-somos-section {
   width: 100%;
-  min-height: 100svh;
+  /* min-height: 100svh; */
   display: flex;
   align-items: center;
-  padding: 80px 20px;
+  justify-content: center;
+  padding: 60px 20px;
 }
 
 .quienes-somos-container {
@@ -58,16 +59,15 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .quienes-somos-container {
+  /* .quienes-somos-container {
     flex-direction: column;
     text-align: center;
+  } */
+
+  .quienes-somos-texto p {
+    font-size: .7em;
   }
 
-  .quienes-somos-texto h2 {
-    font-size: 2.2rem;
-  }
+ 
 
-  .quienes-somos-img img {
-    max-width: 100%;
-  }
 }

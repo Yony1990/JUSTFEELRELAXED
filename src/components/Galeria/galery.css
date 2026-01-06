@@ -8,42 +8,34 @@
   align-items: center;
   padding: 50px;
   color: #fff;
-
 }
 
 .gallery-container {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: 20px 50px;
+  padding: 20px;
   border-radius: 20px;
+  
 }
 
 .gallery-container::-webkit-scrollbar {
-  width: 7px;
-  background: #2f2f2fbe;
-  border-radius: 20px;
+  display: none;
 }
 
-.gallery-container::-webkit-scrollbar-track {
-  cursor: pointer;
-}
-
-.gallery-container::-webkit-scrollbar-thumb {
-  cursor: pointer;
-  background: #96969653;
-  border-radius: 20px;
-}
-
-.gallery-container::-webkit-scrollbar-thumb:hover {
-  background: #f3914cbe;
-}
 
 .portfolio {
-  width: 100%;
+  /* width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 25px; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
 }
 
 .portfolio-item {
@@ -114,34 +106,6 @@
   text-decoration: underline;
 }
 
-/* Responsive grid */
-@media (min-width: 890px) {
-  .portfolio {
-    width: 710px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .medium {
-    grid-row: span 1;
-  }
-
-  .large {
-    grid-row: span 2;
-  }
-
-  .wide {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-}
-
-@media (min-width: 1100px) {
-  .portfolio {
-    width: 1050px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* 🔹 Lightbox */
 .lightbox {
   position: fixed;
@@ -176,7 +140,7 @@
 
 .nombGale {
   margin: 20px;
-  width: 1050px;
+  width: 1200px;
 }
 
 .nombGale h2 {
@@ -190,4 +154,94 @@
 .nombGale span {
   font-size: .8rem;
   color: #f3914cbe;
+}
+
+/* Responsive grid */
+
+
+@media (max-width: 720px) {
+
+  /* .portfolio {
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    padding: 20px;
+  } */
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+  }
+
+  .gallery-section {
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 970px) {
+
+  .portfolio {
+
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+
+
+
+  .wide {
+    grid-column: span 2;
+  }
+
+  .large {
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  
+  /* .portfolio {
+
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+  
+  
+  } */
+  /* .medium {
+    grid-row: span 1;
+  }
+
+  .large {
+    grid-row: span 2;
+  }
+
+  .wide {
+    grid-column: span 2;
+
+  } */
+
+  .portfolio {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .wide {
+    grid-column: span 1; /* 🔑 obligatorio */
+  }
+
+  .large {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 1350px) {
+  .nombGale {
+  margin: 15px;
+  width: 100%;
+}
 }

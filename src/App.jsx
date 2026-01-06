@@ -105,6 +105,7 @@ function App() {
         </>
       ),
     },
+
   ];
   
 
@@ -129,14 +130,7 @@ function App() {
               key={section.id} 
               id={section.id} 
               className="section"
-              style={{
-                width: "100%",
-                height: "100svh",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#fff",
-              }}
+              
             >
             {section.content}
             </section>

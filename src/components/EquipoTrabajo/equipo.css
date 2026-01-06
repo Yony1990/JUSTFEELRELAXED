@@ -1,6 +1,6 @@
 .equipo-hover-section {
   width: 100%;
-  min-height: 100svh;
+  /* min-height: 100vh; */
   padding: 80px 20px;
   display: flex;
   justify-content: center;
@@ -9,9 +9,6 @@
 }
 
 .equipo-title {
-  /* font-size: 2.5rem;
-  font-weight: 400;
-  margin-bottom: 60px; */
   font-family: 'Waterfall';
   font-size: 4rem;
   gap: -10px;
@@ -22,18 +19,17 @@
 .spanEquipo {
     position: relative;
   font-size: .8rem;
-  /* color: #ffbc8bda; */
   color: #f3914cbe;
   margin-bottom: 60px;
 }
 
 /* CARDS */
 .equipo-cards {
-  
   display: flex;
   gap: 60px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  justify-content:center;
+  align-items: center;
 }
 
 .equipo-card { 
@@ -213,15 +209,37 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  .modal-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .name-tag {
-    position: static;
-    margin-top: 10px;
+@media (max-width: 1200px) {
+  .equipo-cards {
+    scale: .9;
+    
   }
 }
+
+@media (max-width: 1055px) {
+  .equipo-cards {
+    scale: .8;
+    /* flex-wrap: wrap; */
+  }
+}
+
+@media (max-width: 940px) {
+  .equipo-cards {
+    scale: .7;
+    
+  }
+}
+
+@media (max-width: 822px) {
+  .equipo-cards {
+    scale: 1;
+    flex-direction: column;
+  }
+}
+
+/* @media (max-width: 710px) {
+  .equipo-cards {
+    scale: .5;
+   
+  }
+} */

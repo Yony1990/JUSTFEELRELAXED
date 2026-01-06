@@ -21,8 +21,8 @@ import img15 from "../../assets/img/pre/img15.jpg";
 
 const images = [
   { src: img1, size: "medium" },
-  { src: img2, size: "medium" },
-  { src: img3, size: "large" },
+  { src: img2, size: "large" },
+  { src: img3, size: "medium" },
   // { src: img4, size: "medium" },
   { src: img5, size: "wide" },
   { src: img6, size: "large" },

@@ -298,3 +298,14 @@
   }
   
 }
+
+@media (max-width: 364px) {
+  .name-Team {
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:250px;
+    
+  }
+}

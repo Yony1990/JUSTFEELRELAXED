@@ -80,15 +80,13 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  /* .quienes-somos-container {
-    flex-direction: column;
-    text-align: center;
-  } */
-
   .quienes-somos-texto p {
     font-size: .7em;
   }
+}
 
- 
-
+@media (max-width: 900px) {
+  .quienes-somos-img {
+    display: none;
+  }
 }

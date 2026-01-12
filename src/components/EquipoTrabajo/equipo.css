@@ -261,3 +261,15 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 392px) {
+  .equipo-cards {
+    scale: .8;
+  }
+}
+
+@media (max-width: 364px) {
+  .equipo-cards {
+    scale: .7;
+  }
+}

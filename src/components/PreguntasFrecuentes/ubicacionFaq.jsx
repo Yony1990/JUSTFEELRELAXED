@@ -116,11 +116,11 @@ export default function UbicacionFaq() {
             <div className="politica">
               
               <ul>
-                <li><span>⦿</span> Climate-Controlled Environment</li>
-                <li><span>⦿</span> Soothing Music and Relaxing Scents</li>
+                <li><span>⦿</span> Climate Controlled</li>
+                <li><span>⦿</span> Soothing Music</li>
                 <li><span>⦿</span> Sanitized Towels</li>
                 <li><span>⦿</span> Premium Products</li>
-                <li><span>⦿</span> Professional Experience</li>
+                <li><span>⦿</span> Professional</li>
               </ul>
             </div>
           </div>

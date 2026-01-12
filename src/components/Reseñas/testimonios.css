@@ -24,6 +24,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 0 50px;
+
 }
 
 .name-Team {
@@ -32,6 +33,13 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.name-Team .columna-name-team {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;justify-content: center;
 }
 
 .name-Team h4 {
@@ -115,7 +123,7 @@
   width: 100%;
   position: relative;
   overflow-x: hidden;
-  overflow-y: visible; /* 👉 Deja que las cards se vean completas */
+  overflow-y: visible; 
 }
 
 
@@ -124,7 +132,7 @@
   gap: 28px;
   flex-wrap: nowrap;
   animation: scroll 55s linear infinite;
-  will-change: transform; /* 🔥 mejora rendimiento */
+  will-change: transform; 
 }
 
 .testimonios-carousel:hover {
@@ -152,9 +160,9 @@
 /* 🔥 Animación al hacer hover */
 .testimonio-card:hover {
   transform: translateY(-5px) scale(1);
-  /* background: #404040be; */
+
   background: rgb(20, 20, 20);
-  /* box-shadow: 0 10px 20px rgba(244, 244, 244, 0.621); */
+ 
   box-shadow: 0 10px 20px rgba(118, 118, 118, 0.465);
 }
 
@@ -164,7 +172,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  /* border: 2px solid rgba(255, 255, 255, 0.3); */
+
 }
 
 .testimonio-text {
@@ -200,7 +208,7 @@
 }
 
 .testimonios-wrapper::-webkit-scrollbar {
-  height: 0; /* opcional: oculta scrollbar */
+  height: 0; 
 }
 
 .descrip {
@@ -212,4 +220,81 @@
 
 .descrip p {
   max-width: 1000px;
+}
+
+@media (max-width: 1300px) {
+  .container-carrucel .opinar {
+    width: 300px;
+   
+  }
+  .container-name-Team {
+    flex-direction: column;
+    padding: 0px 0px;
+ 
+  }
+
+  .container-name-Team .foto-Team {
+    padding-top: 0px;
+    padding-right: 0px;
+    height: min-content;
+  }
+
+  .container-name-Team .foto-Team img {
+    margin-top: 0px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  
+  .container-carrucel .opinar {
+    width: 200px;
+   
+  }
+  
+
+  .testimonio-card  {
+    min-width: 200px;
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-carrucel {
+    flex-direction: column;
+  }
+  .container-name-Team {
+    flex-direction:row;
+    padding: 0px 0px;
+    width: min-content;
+
+  }
+
+  .name-Team {
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .container-name-Team .foto-Team {
+   width: 130px;
+   display: flex;
+   justify-content: start;
+  }
+
+  .container-carrucel .opinar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .container-name-Team .foto-Team {
+    display: none;
+  }
+  
 }

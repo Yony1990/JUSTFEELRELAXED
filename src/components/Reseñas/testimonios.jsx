@@ -125,20 +125,23 @@ const Testimonios = () => {
               <img src={avatar1} alt="" />
             </div>
             <div className="name-Team" >
-              <h4>JUST FEEL RELAXED</h4> 
-              <div className="value-Team"><span className="number-clasif">5.0</span> ⭐⭐⭐⭐⭐</div>
-              <span>Based on 20 Reviews</span>
-              <img src={google2} alt="" />
-              <button className="cursor-target">Rate Us On <img src={google} alt="" /></button>
+              <div className="columna-name-team">
+                <h4>JUST FEEL RELAXED</h4> 
+                <div className="value-Team"><span className="number-clasif">5.0</span> ⭐⭐⭐⭐⭐</div>
+                <span>Based on 20 Reviews</span>
+                <img src={google2} alt="" />
+              </div>
+              <div className="btns-name-Team">
+                <button className="cursor-target">Rate Us On <img src={google} alt="" /></button>
+                <button className="cursor-target">Rate Us On <img src={google} alt="" /></button>
+              </div>
+              
             </div>
           </div>
         </div>
 
         <div className="testimonios-wrapper" ref={scrollRef}>
 
-        {/* <div className="opinar">
-
-        </div> */}
 
         <div className="testimonios-carousel">
             {/* Bloque principal */}
@@ -181,10 +184,6 @@ const Testimonios = () => {
      
       <div className="descrip">
         <p>
-        
-        {/* En JUST FEEL RELAXED, nos enorgullece saber que nuestros clientes nos aman. Esto se debe a nuestra inquebrantable dedicación a la calidad y eficiencia en cada tratamiento que ofrecemos. Nos esforzamos por proporcionar resultados excepcionales, asegurando que cada visita sea una experiencia rejuvenecedora. Creemos firmemente en la importancia de crear un ambiente cálido y relajante, donde nuestros clientes pueden escapar del estrés diario. Cada detalle está pensado para que se sientan valorados y cuidados, porque su bienestar es nuestra prioridad. Gracias por confiar en nosotros para su relajación y cuidado personal. */}
-        
-        {/* At<span> JUST FEEL RELAXED</span>, we take pride in knowing that our clients love us. This is thanks to our unwavering commitment to quality and efficiency in every treatment we offer. We strive to deliver exceptional results, ensuring that each visit is a rejuvenating experience. We firmly believe in the importance of creating a warm and relaxing environment where our clients can escape the stresses of daily life. Every detail is designed to make them feel valued and cared for, because their well-being is our top priority. Thank you for trusting us with your relaxation and personal care. */}
 
         At<span>  JUST FEEL RELAXED</span>, we’re proud that our clients love what we do. It’s all thanks to our dedication to providing high-quality, effective treatments every time. We focus on delivering outstanding results and ensuring that every visit feels like a rejuvenating escape. We create a warm, relaxing atmosphere where clients can leave daily stress behind. Every detail is designed to make you feel valued and cared for—because your well-being is our priority. Thank you for trusting us to take care of your relaxation and self-care.
         

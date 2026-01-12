@@ -46,8 +46,11 @@ const EquipoHover = () => {
 
   return (
     <section className="equipo-hover-section">
-      <h4 className="equipo-title">Our Team</h4>
-      <span className="spanEquipo">Wellness Professionals</span>
+      <div className="container-equipo-title">
+        <h4 className="equipo-title">Our Team</h4>
+        <span className="spanEquipo">Wellness Professionals</span>
+      </div>
+      
 
       <div className="equipo-cards">
         {team.map((person, i) => (

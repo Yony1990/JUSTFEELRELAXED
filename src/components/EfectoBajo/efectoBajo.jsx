@@ -88,8 +88,8 @@ const EfectoBajo = () => {
 
           <div className="wsp-body">
             <div className="chat-bubble">
-              <p><strong>Hola 👋🏼</strong></p>
-              <p>¿En qué puedemos ayudarte?</p>
+              <p><strong>Hello there 👋🏼</strong></p>
+              <p>How can we help you?</p>
             </div>
 
             <a
@@ -98,7 +98,7 @@ const EfectoBajo = () => {
               rel="noopener noreferrer"
               className="wsp-button cursor-target"
             >
-              Abrir chat <i className="bi bi-send"></i>
+              Open Chat <i className="bi bi-send"></i>
             </a>
           </div>
         </div>

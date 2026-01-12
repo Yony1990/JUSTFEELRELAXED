@@ -42,10 +42,10 @@ export default function UbicacionFaq() {
       question: "Can I Choose a Male or Female Therapist?",
       answer: "Sí, al realizar la reserva podrás seleccionar el profesional de tu preferencia.",
     },
-    {
-      question: "Is Parking Available?",
-      answer: "Yes, we offer free parking for spa clients.",
-    },
+    // {
+    //   question: "Is Parking Available?",
+    //   answer: "Yes, we offer free parking for spa clients.",
+    // },
   ];
 
   const [openIndex, setOpenIndex] = useState(0);
@@ -57,6 +57,39 @@ export default function UbicacionFaq() {
 
   return (
     <section className="ubicacionfaq-section">
+
+      
+
+      <div className="faq-container">
+        <h2 className="faq-title">Frequently Asked Questions</h2>
+        <span className="client-pregunt">Easily Access the Information You Need</span>
+
+        <div className="faq-list">
+          {faqs.map((item, index) => (
+            <div className="faq-item cursor-target" key={index}>
+
+                <div className="item-adorno">
+                  <div
+                  className="faq-question"
+                  onClick={() => toggleFAQ(index)}
+                  >
+                  <p>{item.question}</p>
+                  <span className="faq-icon">
+                    {openIndex === index ? "➖" : "➕"}
+                  </span>
+                  </div>
+
+                  <div className={`faq-answer ${openIndex === index ? "open" : ""}`}>
+                    <p>{item.answer}</p>
+                  </div>
+                </div>
+              
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ================= Map ================= */}
 
       <div className="map-container">
 
@@ -75,17 +108,19 @@ export default function UbicacionFaq() {
           <div className="container-other">
             <div className="horario">
               <p>Business Hours</p>
-              <span>10am a 8pm</span>
+              <span>10:00 AM 8:00 PM</span>
             </div>
 
+            <h4>Our Space</h4>
+
             <div className="politica">
-              <h4>Our Space</h4>
+              
               <ul>
-                <li>Climate-Controlled Environment</li>
-                <li>Soothing Music and Relaxing Scents</li>
-                <li>Sanitized Towels</li>
-                <li>Premium Products</li>
-                <li>Professional Experience</li>
+                <li><span>⦿</span> Climate-Controlled Environment</li>
+                <li><span>⦿</span> Soothing Music and Relaxing Scents</li>
+                <li><span>⦿</span> Sanitized Towels</li>
+                <li><span>⦿</span> Premium Products</li>
+                <li><span>⦿</span> Professional Experience</li>
               </ul>
             </div>
           </div>
@@ -93,13 +128,12 @@ export default function UbicacionFaq() {
 
         <div className="text-local">
           <div className="info-card">
+            <h4>Guest Policy</h4>
             <ul>
-              <li>Advance Booking Required</li>
-              <li>Arrive 5–10 Minutes Early</li>
-              <li>By Appointment Only</li>
-              <li>Strict Sanitation Protocols</li>
-
-              {/* ACTIVADOR DEL MODAL */}
+              <li><span>⦿</span> Advance Booking Required</li>
+              <li><span>⦿</span> Arrive 5–10 Minutes Early</li>
+              <li><span>⦿</span> By Appointment Only</li>
+              <li><span>⦿</span> Strict Sanitation Protocols</li>
               <li
                 className="cursor-target"
                 onClick={() => setShowPolicyModal(true)}
@@ -113,31 +147,6 @@ export default function UbicacionFaq() {
           <div className="carruc-card">
             <Carrucel />
           </div>
-        </div>
-      </div>
-
-      <div className="faq-container">
-        <h2 className="faq-title">Frequently Asked Questions</h2>
-        <span className="client-pregunt">Easily Access the Information You Need</span>
-
-        <div className="faq-list">
-          {faqs.map((item, index) => (
-            <div className="faq-item cursor-target" key={index}>
-              <div
-                className="faq-question"
-                onClick={() => toggleFAQ(index)}
-              >
-                <p>{item.question}</p>
-                <span className="faq-icon">
-                  {openIndex === index ? "➖" : "➕"}
-                </span>
-              </div>
-
-              <div className={`faq-answer ${openIndex === index ? "open" : ""}`}>
-                <p>{item.answer}</p>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -181,9 +190,9 @@ export default function UbicacionFaq() {
             </p>
 
             <div className="policy-modal-actions">
-              <button className="btn-cancel">Cancel Appointment</button>
+              <button className="btn-cancel cursor-target">Cancel Appointment</button>
               <button
-                className="btn-close"
+                className="btn-close cursor-target"
                 onClick={() => setShowPolicyModal(false)}
               >
                 Close

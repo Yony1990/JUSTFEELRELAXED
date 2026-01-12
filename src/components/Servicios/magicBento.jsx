@@ -676,7 +676,7 @@ const magicBento = ({
                 <div className="card-curtain" aria-hidden="false">
                   <div className="card-curtain__inner">
                     <div className="card-curtain__title">{card.title}</div>
-                    {/* <div className="card-curtain__desc">{card.description}</div> */}
+                    
                     <p className="card-curtain__text">
                       Aquí podés poner un párrafo corto explicando el servicio, beneficios rápidos o un resumen.
                     </p>
@@ -687,10 +687,7 @@ const magicBento = ({
                 </div>
 
               </div>
-              {/* <div className="magic-bento-card__content">
-                <h2 className="magic-bento-card__title">{card.title}</h2>
-                <p className="magic-bento-card__description">{card.description}</p>
-              </div> */}
+             
               
             </div>
           );

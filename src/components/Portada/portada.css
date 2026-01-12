@@ -105,10 +105,6 @@
   transition: all 0.7s ease;
 }
 
-
-
-
-
 .carousel-text span {
   text-shadow: 0 0 50px rgb(193, 106, 63);
   z-index: 900;
@@ -189,21 +185,12 @@
   transform: scale(1.2);
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .carousel-text h2 {
-    font-size: 1.6rem;
-  }
-}
-
-
 .efecto-bajo {
   z-index: 1;
     width: 100%;
     height: 100%;
     top: 0;
     position: absolute;
-    /* z-index: 500; */
 }
 
 .efecto-bajo .degradado {
@@ -213,4 +200,23 @@
     bottom: 0;
     backdrop-filter: blur(1px);
     background: linear-gradient(to top, rgba(0, 0, 0, 1) .5%, rgba(0, 0, 0, 0) 80%);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .carousel-text h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .carousel-text h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .carousel-text h1 {
+    font-size: 4rem;
+  }
 }

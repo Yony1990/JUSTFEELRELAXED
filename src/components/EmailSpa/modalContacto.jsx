@@ -56,28 +56,28 @@ const ModalContacto = ({ isOpen, onClose }) => {
             <h2>Contact</h2>
 
             <form onSubmit={handleSubmit}>
-              <input type="text" name="from_name" placeholder="Tu nombre" required />
+              <input type="text" name="from_name" placeholder="Your Name" required />
 
               <input
                 type="email"
                 name="reply_to"
-                placeholder="Tu correo electrónico"
+                placeholder="Email Address"
                 required
               />
 
               <textarea
                 name="message"
-                placeholder="Escribe tu mensaje..."
+                placeholder="Type your message…"
                 required
               ></textarea>
 
               <button className="cursor-target send-btn" type="submit" disabled={loading}>
-                {loading ? "Enviando..." : "Enviar"}
+                {loading ? "Sending message…" : "Send"}
               </button>
             </form>
           </>
         ) : (
-          <h3 className="sent-msg">¡Mensaje enviado con éxito!</h3>
+          <h3 className="sent-msg">Message Sent Successfully!</h3>
         )}
 
         <button className="close-btn cursor-target" onClick={onClose}>

@@ -1,5 +1,5 @@
 import "./quienesSomos.css";
-import imgSpa from "../../assets/img/imgSomos.png"; // cambia el nombre si tu imagen es otro
+import imgSpa from "../../assets/img/peaple/gastonFinal1.png"; // cambia el nombre si tu imagen es otro
 
 const QuienesSomos = () => {
   return (
@@ -30,6 +30,7 @@ const QuienesSomos = () => {
         {/* IMAGEN */}
         <div className="quienes-somos-img">
           <img src={imgSpa} alt="Centro de masajes" />
+          <div className="img-gradient-port" />
         </div>
 
       </div>

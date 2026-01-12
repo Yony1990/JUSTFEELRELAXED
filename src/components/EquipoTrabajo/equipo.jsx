@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./equipo.css";
 
-import man from "../../assets/img/imgSomos.png";
+import man from "../../assets/img/peaple/gastonFinal1.png";
 import woman1 from "../../assets/img/imgMujer1.png";
 import woman2 from "../../assets/img/imgMujer2.png";
 

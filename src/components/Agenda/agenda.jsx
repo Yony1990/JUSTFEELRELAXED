@@ -9,19 +9,19 @@ export default function ComoAgendarme() {
       id: "01",
       img: img1,
       title: "CHOOSE YOUR PROFESSIONAL",
-      icon: <i class="bi bi-person-raised-hand"></i>,
+      icon: <i className="bi bi-person-raised-hand"></i>,
     },
     {
       id: "02",
       img: img2,
       title: "CHOOSE YOUR SERVISE",
-      icon: <i class="bi bi-hand-thumbs-up"></i>,
+      icon: <i className="bi bi-hand-thumbs-up"></i>,
     },
     {
       id: "03",
       img: img3,
       title: "SCHEDULE YOUR APPOINTMENT",
-      icon: <i class="bi bi-journal-check"></i>,
+      icon: <i className="bi bi-journal-check"></i>,
     },
   ];
 

@@ -105,6 +105,7 @@
 
 .contact-btn-header i {
     display: none;
+    font-size: 1.5em;
 }
 
 @media (max-width: 1000px) {
@@ -130,6 +131,6 @@
   
   .content-redes-social {
     left: 20px;
-    top: -200px;
+    top: -210px;
   }
 }

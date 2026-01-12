@@ -48,6 +48,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section {
+  
   height: 100svh;
   width: 100%;
   display: flex;
@@ -58,6 +59,13 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 1000px) {
   .section {
     
+    height: max-content;
+  }
+}
+
+@media (max-width: 550px) {
+  .section {
+    scroll-margin-top: 50px;
     height: max-content;
   }
 }

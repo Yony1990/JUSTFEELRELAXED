@@ -20,8 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
-
+  gap: 20px;
   position: relative;
 }
 
@@ -145,10 +144,10 @@
   border: none;
   background: #f3914cbe;
   backdrop-filter: blur(10px);
-  color: #dbdbdb;
+  color: rgb(18, 18, 18);
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
   padding: 16px 40px;
   border-radius: 25px;
   cursor: pointer;
@@ -156,7 +155,7 @@
 }
 
 .btn-agendar:hover {
-  background: #ffa462be;
+  background: #f69652;
 }
 
 /* 📱 Responsive */
@@ -167,15 +166,18 @@
   .steps-wrapper .container-linea {
     padding: 0px 0px;
   }
-  /* .circle-wrapper {
-    width: 150px;
-  height: 150px;
-  } */
+
 }
 
 @media (max-width: 1000px) {
   .steps-wrapper {
     scale: .9;
+  }
+}
+
+@media (max-width: 1000px) {
+  .steps-wrapper {
+    flex-wrap: wrap;
   }
 }
 
@@ -186,6 +188,29 @@
   .circle-wrapper {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media (max-width: 626.5px) {
+  .agendarme-section {
+    margin-bottom: 50px;
+  }
+
+  .steps-wrapper .container-linea {
+    display: none;
+  }
+  
+  .steps-wrapper {
+    scale: 1;
+  }
+
+  /* .circle-wrapper {
+    width: 200px;
+    height: 200px;
+  } */
+
+  .btn-wrapper {
+    margin-top: 0px;
   }
 }
 

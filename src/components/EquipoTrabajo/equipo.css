@@ -141,7 +141,6 @@
 /* HOVER */
 .equipo-card:hover img {
   transform: translateY(-20px) scale(1.08);
-  /* filter: drop-shadow(0 -85px 35px rgba(92, 92, 92, 0.6)); */
   filter: drop-shadow(0 -135px 100px rgba(174, 174, 174, 0.29));
 }
 

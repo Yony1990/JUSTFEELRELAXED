@@ -115,7 +115,6 @@
 .testimonios-section h3 {
   margin-bottom: 20px;
   font-size: .8rem;
-  /* color: #ffbc8bda; */
   color: #f3914cbe;
 }
 
@@ -131,7 +130,7 @@
   display: flex;
   gap: 28px;
   flex-wrap: nowrap;
-  animation: scroll 55s linear infinite;
+  animation: scroll 25s linear infinite;
   will-change: transform; 
 }
 
@@ -204,7 +203,7 @@
 }
 
 .testimonios-wrapper {
-  scroll-behavior: smooth;
+  scroll-behavior:auto;
 }
 
 .testimonios-wrapper::-webkit-scrollbar {
@@ -296,6 +295,12 @@
   .container-name-Team .foto-Team {
     display: none;
   }
+
+  /* .testimonios-carousel {
+
+    animation: scroll 15s linear infinite;
+
+  } */
   
 }
 

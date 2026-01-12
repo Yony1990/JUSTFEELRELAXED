@@ -80,14 +80,14 @@ function App() {
       ),
     },
     
-    // {
-    //   id: "equipo",
-    //   content: (
-    //     <>
-    //       <Equipo/>
-    //     </>
-    //   ),
-    // },
+    {
+      id: "equipo",
+      content: (
+        <>
+          <Equipo/>
+        </>
+      ),
+    },
     {
       id: "testimonios",
       content: (

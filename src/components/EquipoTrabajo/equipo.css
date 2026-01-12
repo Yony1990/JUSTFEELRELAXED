@@ -272,3 +272,9 @@
     scale: .7;
   }
 }
+
+@media (max-width: 306px) {
+  .equipo-cards {
+    scale: .6;
+  }
+}

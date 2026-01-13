@@ -63,7 +63,7 @@ const EquipoHover = () => {
                 className="btn-vermas cursor-target"
                 onClick={() => setActive(person)}
               >
-                VIEW PROFILE
+                PROFILE
               </button>
             </div>
 

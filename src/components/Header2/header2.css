@@ -40,7 +40,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  font-family: 'Cormorant Garamond';
+  /* font-family: 'Cormorant Garamond'; */
   justify-content:end;
   align-items: center;
   border-radius: 20px;
@@ -71,14 +71,15 @@
   border: none;
   background-color: transparent;
   color: #dbdbdb;
-  font-family: 'Cormorant';
+  font-family: 'Poiret One';
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: 200;
+  /* font-weight: 500; */
   padding: 20px;
   border-radius: 104px;
   cursor: pointer;
   transition: all 0.2s ease;
+  
 }
 
 .menu2 {
@@ -123,29 +124,20 @@
 
 /* Activo */
 .nav-btn2.active {
-
+  background: #5a5a5a57;
   opacity: .9;
   height: 1px;
   border: none;
-  color: #ce9c5e;
+  color: rgba(243, 145, 76, 0.745);
   font-weight: 600;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .nav2 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .nav-links2 {
     
     flex-wrap: wrap;
     gap: 10px;
-  }
-
-  .nav-btn2 {
-    font-size: 0.9rem;
   }
 }
 

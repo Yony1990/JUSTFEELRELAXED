@@ -97,14 +97,14 @@ function App() {
       ),
     },
     
-    // {
-    //   id: "faq",
-    //   content: (
-    //     <>
-    //       <Ubicac/>
-    //     </>
-    //   ),
-    // },
+    {
+      id: "faq",
+      content: (
+        <>
+          <Ubicac/>
+        </>
+      ),
+    },
 
   ];
   

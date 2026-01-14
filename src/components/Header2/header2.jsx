@@ -65,15 +65,13 @@ export default function header2() {
   return (
   
     <div className='header2'>
-        {/* <img className="logo" src={Logo} alt="" /> */}
+       
         <div className="menu2 cursor-target">
           <button onClick={showMenu}>
            <span>X</span>
           </button>
         </div>
-        {/* <div className="contact">
-          <button className="nav-btn-contact">Contacto</button>
-        </div> */}
+        
         <div className={activeMenu ? "GlassContainer-si2" : "GlassContainer-no2" }>
 
           <div onClick={showMenu} className="GlassContent-si2">
@@ -96,19 +94,7 @@ export default function header2() {
                 </ul>
               </nav>
           </div>
-          
-          {/* <div className="GlassMaterial">
-              <div className="GlassEdgeReflection"></div>
-              <div className="GlassEmbossReflection"></div>
-              <div className="GlassRefraction"></div>
-              <div className="GlassBlur"></div>
-              <div className="BlendLayers"></div>
-              <div className="BlendEdge"></div>
-              <div className="Highlight"></div>
-              <div className="Tint"></div>
-              <div className="Contrast"></div>
-              <div className="Brightness"></div>
-          </div> */}
+  
         </div>
         
      </div>

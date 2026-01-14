@@ -276,8 +276,7 @@
      font-size: 10rem;
      font-weight: 600;
      letter-spacing: 10px;
-     left: 63%;
-     bottom: 100px;
+     
   }
   .btn-vermas {
     bottom: 100px;
@@ -295,8 +294,7 @@
      font-size: 8rem;
      font-weight: 600;
      letter-spacing: 8px;
-     left: 63%;
-     bottom: 100px;
+    
   }
   .btn-vermas {
     bottom: 130px;
@@ -322,9 +320,7 @@
      font-size: 12rem;
      font-weight: 600;
      letter-spacing: 12px;
-     left: 63%;
-     bottom: 100px;
-     contain: paint;
+    
     
   }
   
@@ -356,11 +352,10 @@
   }
   .name-tag p {
       
-     font-size: 15rem;
+     font-size: 12rem;
      font-weight: 600;
      letter-spacing: 10px;
-     left: 63%;
-     bottom: 100px;
+
   }
   .btn-vermas {
     bottom: 100px;
@@ -374,11 +369,10 @@
   }
   .name-tag p {
       
-     font-size: 12rem;
+     font-size: 10rem;
      font-weight: 600;
      letter-spacing: 8px;
-     left: 63%;
-     bottom: 100px;
+
   }
   .btn-vermas {
     bottom: 130px;
@@ -405,8 +399,8 @@
      font-size: 8rem;
      font-weight: 600;
      letter-spacing: 12px;
-     left: 63%;
-     bottom: 100px;
+
+
      
     
   }

@@ -91,25 +91,38 @@ const testimonios = [
 const Testimonios = () => {
   const scrollRef = useRef(null);
 
-  // --- Scroll horizontal con la rueda del mouse ---
+
+  // useEffect(() => {
+  //   const el = scrollRef.current;
+  //   if (!el) return;
+
+  //   const onWheel = (e) => {
+      
+  //     e.preventDefault();
+
+     
+  //     el.scrollLeft += e.deltaY * 1.2;
+  //   };
+
+   
+  //   el.addEventListener("wheel", onWheel, { passive: false });
+
+  //   return () => {
+  //     el.removeEventListener("wheel", onWheel);
+  //   };
+  // }, []);
+
   useEffect(() => {
     const el = scrollRef.current;
-    if (!el) return;
+    if (!el || window.matchMedia("(hover: none)").matches) return;
 
     const onWheel = (e) => {
-      // Evita el scroll vertical de la página
       e.preventDefault();
-
-      // Convierte scroll vertical -> movimiento horizontal
       el.scrollLeft += e.deltaY * 1.2;
     };
 
-    // Agrega el evento manualmente para poder usar preventDefault
     el.addEventListener("wheel", onWheel, { passive: false });
-
-    return () => {
-      el.removeEventListener("wheel", onWheel);
-    };
+    return () => el.removeEventListener("wheel", onWheel);
   }, []);
 
   return (

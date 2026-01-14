@@ -56,6 +56,9 @@ const EquipoHover = () => {
         {team.map((person, i) => (
           <div className="equipo-card" key={i}>
             <div className="img-wrapper">
+              <div className="name-tag" data-index={i}>
+                <p>{person.name}</p>
+              </div>
               <img src={person.img} alt={person.name} onClick={() => setActive(person)} />
               <div className="img-gradient" />
 
@@ -65,12 +68,10 @@ const EquipoHover = () => {
               >
                 PROFILE
               </button>
-            </div>
-
-            <div className="name-tag" data-index={i}>
-              <p>{person.name}</p>
               
             </div>
+
+            
           </div>
         ))}
       </div>

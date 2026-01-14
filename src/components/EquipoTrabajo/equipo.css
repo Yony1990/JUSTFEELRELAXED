@@ -49,7 +49,10 @@
 .img-wrapper {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-wrapper img {
@@ -76,13 +79,12 @@
 }
 
 /* NAME */
-.name-tag {
+/* .name-tag {
   text-align: end;
   position: absolute;
   top: 60px;
   z-index: -1;
   right: 63%;
-  /* margin-left: 15px; */
   white-space: nowrap;
   font-weight: 900;
   font-size: 4rem;
@@ -108,16 +110,30 @@
 
 .name-tag[data-index="2"] p {
   left: 70%;
+} */
+
+.name-tag {
+  z-index: -1;
+  white-space: nowrap;
+  font-weight: 900;
+  font-size: 4rem;
+  background-color: red;
 }
 
-.name-tag span {
-  color: transparent;              /* sin relleno */
-  -webkit-text-stroke: 1px #f3924c; 
-  font-size: 1.5rem;
-  right: 0px;
-  position: relative;
-  bottom: 55px;
+.name-tag p {
+     font-family: 'Dorsa';   
+     font-size: 15rem;
+     font-weight: 600;
+     letter-spacing: 15px;
+     background-color: blue;
+
+    
+     text-transform: uppercase;
+ 
+     text-align: center;
+    
 }
+
 
 /* BUTTON CENTERED */
 .btn-vermas {

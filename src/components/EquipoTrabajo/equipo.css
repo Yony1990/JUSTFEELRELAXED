@@ -402,7 +402,7 @@
   }
   .name-tag p {
       
-     font-size: 10rem;
+     font-size: 8rem;
      font-weight: 600;
      letter-spacing: 12px;
      left: 63%;
@@ -416,5 +416,11 @@
     left: 50%;
     padding: 10px 30px;
     
+  }
+}
+
+@media (max-width: 232px) {
+  .name-tag p {
+    display: none;
   }
 }

@@ -59,15 +59,18 @@ const EquipoHover = () => {
               <div className="name-tag" data-index={i}>
                 <p>{person.name}</p>
               </div>
-              <img src={person.img} alt={person.name} onClick={() => setActive(person)} />
-              <div className="img-gradient" />
+              <div className="grup-img">
+                <img src={person.img} alt={person.name} onClick={() => setActive(person)} />
+                {/* <div className="img-gradient" /> */}
 
-              <button
-                className="btn-vermas cursor-target"
-                onClick={() => setActive(person)}
-              >
-                PROFILE
-              </button>
+                <button
+                  className="btn-vermas cursor-target"
+                  onClick={() => setActive(person)}
+                >
+                  PROFILE
+                </button>
+              </div>
+              
               
             </div>
 

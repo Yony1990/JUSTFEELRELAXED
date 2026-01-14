@@ -125,20 +125,12 @@
   overflow-y: visible; 
 } */
 
-.testimonios-wrapper {
-  width: 100%;
-  position: relative;
-  overflow-x: auto;
-  overflow-y: visible;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
-}
 
 .testimonios-wrapper {
   width: 100%;
   position: relative;
   overflow-x: auto;
-  overflow-y: visible;
+  /* overflow-y: visible; */
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x;
 }
@@ -338,8 +330,21 @@
   }
 }
 
+/* @media (hover: none) and (pointer: coarse) {
+  .testimonios-carousel {
+    animation: none;
+  }
+} */
+
 @media (hover: none) and (pointer: coarse) {
   .testimonios-carousel {
     animation: none;
+    transform: none;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .testimonios-carousel {
+    will-change: auto;
   }
 }

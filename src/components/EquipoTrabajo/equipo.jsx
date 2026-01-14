@@ -67,10 +67,10 @@ const EquipoHover = () => {
               </button>
             </div>
 
-            {/* <div className="name-tag" data-index={i}>
+            <div className="name-tag" data-index={i}>
               <p>{person.name}</p>
               
-            </div> */}
+            </div>
           </div>
         ))}
       </div>

@@ -87,7 +87,7 @@ li {
   padding: 10px;
   border: 1px solid rgba(255,255,255,0.15);
   background-color: rgb(18, 18, 18);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.236);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.161);
   border-radius: 16px;
   height: 100%;
   width: 100%;
@@ -221,8 +221,9 @@ li {
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 16px;
   padding: 10px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.236);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.161);
 }
+
 
 .text-local .info-card ul li:nth-child(5) {
   background-color: #f3914cbe;
@@ -494,9 +495,5 @@ li {
     align-items: center;
 
   }
-
-}
-
-@media (max-width: 298px) {
 
 }

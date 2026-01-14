@@ -108,7 +108,7 @@ export default function UbicacionFaq() {
           <div className="container-other">
             <div className="horario">
               <p>Business Hours</p>
-              <span>10:00 AM 8:00 PM</span>
+              <span>10:00 AM - 8:00 PM</span>
             </div>
 
             <h4>Our Space</h4>

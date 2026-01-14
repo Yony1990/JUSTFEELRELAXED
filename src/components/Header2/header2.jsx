@@ -68,7 +68,10 @@ export default function header2() {
        
         <div className="menu2 cursor-target">
           <button onClick={showMenu}>
-           <span>X</span>
+           <span>
+            
+            <i class="bi bi-list"></i>
+           </span>
           </button>
         </div>
         

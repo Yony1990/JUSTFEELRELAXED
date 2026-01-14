@@ -204,13 +204,17 @@
     scale: 1;
   }
 
-  /* .circle-wrapper {
-    width: 200px;
-    height: 200px;
-  } */
+  
 
   .btn-wrapper {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 447px) {
+  .circle-wrapper {
+    width: 230px;
+    height: 230px;
   }
 }
 

@@ -258,6 +258,7 @@ li {
 .faq-container {
   max-width: 500px;
   min-width: 250px;
+  margin-bottom: 50px;
 }
 
 .faq-title {

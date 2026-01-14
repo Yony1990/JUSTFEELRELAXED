@@ -32,10 +32,7 @@
 
 /* --- GRID --- */
 .resultados-grid {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
   display: flex;
-  
   border: 3px solid #404040be;
   border-radius: 20px;
   overflow: hidden;
@@ -43,7 +40,7 @@
 }
 
 .resultados-grid > *:nth-child(odd) {
-  background: #404040be; /* impares */
+  background: #404040be;
 }
 
 .result-card {
@@ -100,16 +97,14 @@
   margin-bottom: 20px;
 }
 
-/* Alternar colores de los botones dentro de cada card */
-.result-card:nth-child(odd) .result-btn {
-  background: #000000;  /* naranja */
+/* .result-card:nth-child(odd) .result-btn {
+  background: #000000;  
   
 }
 
-
 .result-card:nth-child(odd) .result-btn:hover {
   background: #d87f3b;
-}
+} */
 
 
 
@@ -117,9 +112,11 @@
 .result-btn {
   min-width: 100px;
   border: none;
-  background: #5a5a5a57;
+  /* background: #5a5a5a57; */
+  background: #f3914cbe;
   backdrop-filter: blur(10px);
-  color: #dbdbdb;
+  /* color: #dbdbdb; */
+  color: rgb(18, 18, 18);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -130,7 +127,7 @@
 }
 
 .result-btn:hover {
-  background: #f3914cbe;
+  background: #f69652;
   transition: all 0.7s ease;
 }
 

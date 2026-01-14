@@ -69,7 +69,7 @@ const EquipoHover = () => {
 
             <div className="name-tag" data-index={i}>
               <p>{person.name}</p>
-              {/* <span>{person.lastName}</span> */}
+              
             </div>
           </div>
         ))}

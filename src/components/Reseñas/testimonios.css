@@ -56,7 +56,6 @@
 
 .name-Team img {
   width: 130px;
-  /* background-color: rgb(49, 49, 49); */
 }
 
 .name-Team button  {
@@ -74,6 +73,7 @@
   text-align: center;
   background-color: #266fe6;
   transition: all .3s ease;
+  color: rgb(255, 253, 250);
 }
 
 .name-Team button:hover {
@@ -118,11 +118,29 @@
   color: #f3914cbe;
 }
 
-.testimonios-wrapper {
+/* .testimonios-wrapper {
   width: 100%;
   position: relative;
   overflow-x: hidden;
   overflow-y: visible; 
+} */
+
+.testimonios-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+.testimonios-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 
 
@@ -277,6 +295,15 @@
     width: 300px;
   }
 
+  .btns-name-Team {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
   .container-name-Team .foto-Team {
    width: 130px;
    display: flex;
@@ -296,12 +323,6 @@
     display: none;
   }
 
-  /* .testimonios-carousel {
-
-    animation: scroll 15s linear infinite;
-
-  } */
-  
 }
 
 @media (max-width: 364px) {
@@ -312,5 +333,11 @@
     justify-content: space-between;
     width:250px;
     
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .testimonios-carousel {
+    animation: none;
   }
 }

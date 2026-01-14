@@ -70,7 +70,7 @@ export default function header2() {
           <button onClick={showMenu}>
            <span>
             
-            <i class="bi bi-list"></i>
+            <i className="bi bi-list"></i>
            </span>
           </button>
         </div>

@@ -233,10 +233,11 @@
   .modal-title {
     margin-bottom: -40px;
     font-size: 22px;
-    color: red;
+    color: rgb(77, 255, 0);
   }
   .modal-content {
-    
+    line-height: 1.3;
     margin-bottom: 0px;
   }
+  
 }

@@ -330,12 +330,6 @@
   }
 }
 
-/* @media (hover: none) and (pointer: coarse) {
-  .testimonios-carousel {
-    animation: none;
-  }
-} */
-
 @media (hover: none) and (pointer: coarse) {
   .testimonios-carousel {
     animation: none;

@@ -97,14 +97,14 @@
   margin-bottom: 20px;
 }
 
-/* .result-card:nth-child(odd) .result-btn {
+.result-card:nth-child(odd) .result-btn {
   background: #000000;  
   
 }
 
 .result-card:nth-child(odd) .result-btn:hover {
   background: #d87f3b;
-} */
+}
 
 
 
@@ -112,11 +112,11 @@
 .result-btn {
   min-width: 100px;
   border: none;
-  /* background: #5a5a5a57; */
-  background: #f3914cbe;
+  background: #5a5a5a57;
+  /* background: #f3914cbe; */
   backdrop-filter: blur(10px);
-  /* color: #dbdbdb; */
-  color: rgb(18, 18, 18);
+  color: #dbdbdb;
+  /* color: rgb(18, 18, 18); */
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -224,5 +224,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .modal-title {
+    margin-bottom: -40px;
+  }
+  .modal-content {
+    
+    margin-bottom: 0px;
   }
 }

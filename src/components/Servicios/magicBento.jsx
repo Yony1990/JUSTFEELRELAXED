@@ -10,6 +10,9 @@ import img5 from "../../assets/img/masajeCeluli.webp";
 import img6 from "../../assets/img/masajeReju.avif";
 import img7 from "../../assets/img/masajePist.jpg";
 import img8 from "../../assets/img/masajePies.avif";
+import img9 from "../../assets/img/balines.avif";
+import img10 from "../../assets/img/prenatal.jpg";
+import img11 from "../../assets/img/desco3.avif";
 
 
 const DEFAULT_PARTICLE_COUNT = 12;
@@ -20,39 +23,40 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
     image: img1,
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Deportivo'
-  },
-  {
-    image: img7,
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Overview'
+    title: 'Sports Massage',
+    description: 'A focused therapeutic massage designed to enhance performance, reduce muscle tension, and support faster recovery after physical activity.',
+    label: 'Sports'
   },
   {
     image: img2,
-    title: 'Collaboration',
-    description: 'Work together seamlessly',
-    label: 'Relajante'
+    title: 'Relaxation Massage',
+    description: 'A gentle massage that promotes deep relaxation, relieves stress, and restores balance to body and mind.',
+    label: 'Relaxation'
   },
   {
-    image: img4,
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Efficiency'
+    image: img9,
+    title: 'Balinese Massage',
+    description: 'A traditional Balinese massage blending deep pressure, gentle stretches, and rhythmic movements to relieve tension, improve circulation, restore energy flow, and promote profound relaxation and overall well-being.',
+    label: 'Balinese'
   },
+  
   {
     image: img5,
-    title: 'Integration',
-    description: 'Connect favorite tools',
-    label: 'Connectivity'
+    title: 'Lymphatic Massage',
+    description: 'A gentle lymphatic massage that stimulates circulation, reduces swelling, supports detoxification, boosts immune function, improves skin appearance, and promotes overall relaxation and wellness through rhythmic techniques and light pressure applied.',
+    label: 'Lymphatic'
   },
   {
-    image: img8,
-    title: 'Security',
-    description: 'Enterprise-grade protection',
-    label: 'Protection'
+    image: img10,
+    title: 'Prenatal Massage',
+    description: 'A gentle prenatal massage that relieves tension, reduces stress, and supports comfort and well-being during pregnancy.',
+    label: 'Prenatal'
+  },
+  {
+    image: img11,
+    title: 'Muskelafspændende',
+    description: 'A deep therapeutic massage focused on releasing muscle knots, relieving chronic tension, and restoring mobility and muscular balance.',
+    label: 'Muskelafspændende'
   }
 ];
 
@@ -678,7 +682,7 @@ const magicBento = ({
                     <div className="card-curtain__title">{card.title}</div>
                     
                     <p className="card-curtain__text">
-                      Aquí podés poner un párrafo corto explicando el servicio, beneficios rápidos o un resumen.
+                      {card.description}                  
                     </p>
                     <div className="card-curtain__actions">
                       <button className="btn-contratar cursor-target" type="button">Contratar</button>

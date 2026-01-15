@@ -91,27 +91,6 @@ const testimonios = [
 const Testimonios = () => {
   const scrollRef = useRef(null);
 
-
-  // useEffect(() => {
-  //   const el = scrollRef.current;
-  //   if (!el) return;
-
-  //   const onWheel = (e) => {
-      
-  //     e.preventDefault();
-
-     
-  //     el.scrollLeft += e.deltaY * 1.2;
-  //   };
-
-   
-  //   el.addEventListener("wheel", onWheel, { passive: false });
-
-  //   return () => {
-  //     el.removeEventListener("wheel", onWheel);
-  //   };
-  // }, []);
-
   useEffect(() => {
     const el = scrollRef.current;
     if (!el || window.matchMedia("(hover: none)").matches) return;

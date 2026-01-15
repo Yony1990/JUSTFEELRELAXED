@@ -232,6 +232,8 @@
 @media (max-width: 800px) {
   .modal-title {
     margin-bottom: -40px;
+    font-size: 22px;
+    color: red;
   }
   .modal-content {
     

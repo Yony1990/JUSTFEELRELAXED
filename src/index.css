@@ -49,6 +49,13 @@ body::-webkit-scrollbar-thumb:hover {
   
 }
 
+body.preload-active *,
+body.preload-active *::before,
+body.preload-active *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
 a {
   text-decoration: none;
   color: rgb(229, 229, 229);

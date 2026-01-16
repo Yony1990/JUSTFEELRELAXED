@@ -40,7 +40,7 @@ export default function UbicacionFaq() {
     },
     {
       question: "Can I Choose a Male or Female Therapist?",
-      answer: "Sí, al realizar la reserva podrás seleccionar el profesional de tu preferencia.",
+      answer: "Yes, when making your reservation you can select your preferred professional.",
     },
     // {
     //   question: "Is Parking Available?",
@@ -98,7 +98,7 @@ export default function UbicacionFaq() {
 
         <div className="container-all-map">
           <div className="map-card">
-            <a href="https://maps.app.goo.gl/b5gLfcRBSwc5tnan8">
+            <a target="_blank" href="https://maps.app.goo.gl/b5gLfcRBSwc5tnan8">
               <span className="cursor-target">WE ARE HERE</span>
             </a>
             <div className="degrade"></div>

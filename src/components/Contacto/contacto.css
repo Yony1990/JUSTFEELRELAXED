@@ -61,12 +61,12 @@
 /* ANIMACIÓN ESCALONADA (staggered) */
 .content-redes-social li {
   list-style: none;
-  text-align: end;
+  text-align: center;
   border: none;
   background: #5a5a5a57;
   backdrop-filter: blur(10px);
   color: #dbdbdb;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 8px 10px;
   border-radius: 50%;
@@ -74,6 +74,10 @@
   opacity: 0;
   transform: translateX(20px);
   transition: all .4s ease;
+}
+
+.content-redes-social.open li:nth-child(3){
+    padding: 8px 8px;
 }
 
 /* Cuando el menú está abierto, animar cada li con delay */
@@ -92,6 +96,7 @@
 
 .content-redes-social.open li:nth-child(3):hover {
     background-color: rgb(223, 152, 76);
+    padding: 8px 9px;
 }
 
 .content-redes-social.open li:nth-child(4):hover {
@@ -131,6 +136,6 @@
   
   .content-redes-social {
     left: 20px;
-    top: -210px;
+    top: -215px;
   }
 }

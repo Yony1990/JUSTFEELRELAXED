@@ -104,7 +104,7 @@ export default function ResultadosVisibles() {
 
             <div className="btnss">
             
-              <button className="agendart-btn cursor-target">BOOK NOW</button>
+              <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="agendart-btn cursor-target">BOOK NOW</button></a>
               <button className="modal-close cursor-target" onClick={() => setActive(null)}>
                 CLOSE
               </button>

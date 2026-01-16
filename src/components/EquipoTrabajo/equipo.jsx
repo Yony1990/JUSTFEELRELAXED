@@ -88,9 +88,9 @@ const EquipoHover = () => {
               <h3>{active.lastName}</h3>
               <p>{active.info}</p>
 
-              <button className="btn-agendar cursor-target">
+              <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="btn-agendar cursor-target">
                 Agendar
-              </button>
+              </button></a>
             </div>
 
             <div className="modal-img">

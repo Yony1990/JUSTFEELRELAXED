@@ -93,7 +93,7 @@ const EfectoBajo = () => {
             </div>
 
             <a
-              href="https://wa.me/598000000"
+              href="https://wa.me/+4571583738"
               target="_blank"
               rel="noopener noreferrer"
               className="wsp-button cursor-target"

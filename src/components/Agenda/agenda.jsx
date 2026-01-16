@@ -69,7 +69,7 @@ export default function ComoAgendarme() {
       </div>
 
       <div className="btn-wrapper">
-        <button className="btn-agendar cursor-target">BOOK NOW</button>
+        <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="btn-agendar cursor-target">BOOK NOW</button></a>
       </div>
     </section>
   );

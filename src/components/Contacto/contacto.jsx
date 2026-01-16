@@ -36,7 +36,7 @@ const Contacto = () => {
 
           <ul className={`content-redes-social ${open ? "open" : ""}`}>
             <li className='cursor-target' onClick={handleItemClick}>
-              <span><i className="bi bi-whatsapp"></i></span>
+              <a href="https://wa.me/+4571583738" target="_blank"><span><i className="bi bi-whatsapp"></i></span></a>
             </li>
 
             <li
@@ -50,7 +50,7 @@ const Contacto = () => {
             </li>
 
             <li className='cursor-target' onClick={handleItemClick}>
-              <span><i className="bi bi-instagram"></i></span>
+              <a target="_blank" href="https://www.instagram.com/justfeelrelaxed?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span><i className="bi bi-instagram"></i></span></a>
             </li>
 
             <li className='cursor-target' onClick={handleItemClick}>

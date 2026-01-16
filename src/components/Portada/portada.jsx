@@ -30,7 +30,7 @@ const slides = [
     text: "The perfect gift starts with our gift cards",
     text2: "",
     text3: "Give Freedom, Give an Experience",
-    btn: <a href="">Buy a Gift Card</a>,
+    btn: <a href="https://wa.me/+4571583738" target="_blank">Buy a Gift Card</a>,
   },
 ];
 

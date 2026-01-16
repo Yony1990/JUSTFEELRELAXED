@@ -685,7 +685,9 @@ const magicBento = ({
                       {card.description}                  
                     </p>
                     <div className="card-curtain__actions">
-                      <button className="btn-contratar cursor-target" type="button">Contratar</button>
+                      <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="btn-contratar cursor-target" type="button">
+                        Contratar
+                      </button></a>
                     </div>
                   </div>
                 </div>

@@ -95,7 +95,7 @@ const EquipoHover = () => {
 
             <div className="modal-img">
               <img src={active.img} alt={active.name} />
-              <div className="img-gradient-modal" />
+              {/* <div className="img-gradient-modal" /> */}
             </div>
           </div>
         </div>

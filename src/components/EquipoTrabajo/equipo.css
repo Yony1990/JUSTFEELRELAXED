@@ -75,19 +75,6 @@
   filter: drop-shadow(0 -15px 10px rgba(0, 0, 0, 0.682));
 }
 
-/* GRADIENT */
-/* .img-gradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgb(255, 0, 0),
-    transparent 10%
-  );
-  pointer-events: none;
-  z-index: 2;
-} */
-
 .name-tag {
   z-index: -1;
   white-space: nowrap;
@@ -164,8 +151,10 @@
 }
 
 .modal-text h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-family: 'Dorsa'; 
+  font-size: 4rem;
+  margin-bottom: 0px;
+  letter-spacing: 5px;
 }
 
 .modal-text p {
@@ -186,13 +175,15 @@
 
 .modal-img img {
   height: 600px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .modal-img {
     position: relative;
 }
 
-.img-gradient-modal {
+/* .img-gradient-modal {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -201,7 +192,7 @@
     transparent 45%
   );
   pointer-events: none;
-}
+} */
 
 /* RESPONSIVE */
 @media (max-width: 1200px) {
@@ -221,8 +212,6 @@
      letter-spacing: 12px;
      left: 63%;
      bottom: 100px;
-     
-    
   }
   
 }
@@ -278,26 +267,26 @@
     height: 600px;
     width: 90%;
   }
+
+  .modal-img {
+    max-width: 250px;
+  }
+
+  .modal-content {
+    gap: 0px;
+  }
+  .modal-text p {
+    font-size: .8em;
+  }
+
   
   .name-tag p {
-      
      font-size: 12rem;
      font-weight: 600;
      letter-spacing: 12px;
-    
-    
   }
   
-  
-  
 }
-
-/* @media (max-width: 1000px) {
-  .equipo-hover-section {
-    padding: 200px 20px 0px 20px;
-  } 
-
-} */
 
 @media (max-width: 392px) {
     .img-wrapper {
@@ -329,24 +318,16 @@
 }
 
 @media (max-width: 306px) {
-   /* .equipo-cards {
-    flex-direction: column;
-  } */
-
    .img-wrapper {
 
     width: 90%;
   }
-
- 
 
   .name-tag p {
      font-size: 8rem;
      font-weight: 600;
      letter-spacing: 12px;
   }
-
-
 }
 
 @media (max-width: 232px) {

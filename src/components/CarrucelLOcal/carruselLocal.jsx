@@ -1,20 +1,18 @@
 import { useState } from "react";
 import "./carruselLocal.css";
-import imgLocal1 from '../../assets/img/SpaSession-1.jpg';
-import imgLocal2 from '../../assets/img/SpaSession-8.jpg';
+
+import imgLocal1 from '../../assets/img/pre/img0.jpg';
+import imgLocal2 from '../../assets/img/local/local1.JPG';
+import imgLocal3 from '../../assets/img/local/local2.JPG';
+import imgLocal4 from '../../assets/img/local/local3.JPG';
+
 
 const Carrusel = () => {
   const imagenes = [
     imgLocal1,
     imgLocal2,
-    imgLocal1,
-    imgLocal2,
-    imgLocal1,
-    imgLocal2,
-    imgLocal1,
-    imgLocal2,
-    imgLocal1,
-    imgLocal2,
+    imgLocal3,
+    imgLocal4,
   ];
 
   const [index, setIndex] = useState(0);

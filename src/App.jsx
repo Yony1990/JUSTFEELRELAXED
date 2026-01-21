@@ -22,25 +22,6 @@ function App() {
   const [progress, setProgress] = useState(0)
   const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   let start = null
-  //   const duration = 5000 // 10s
-
-  //   const animate = (timestamp) => {
-  //     if (!start) start = timestamp
-  //     const elapsed = timestamp - start
-  //     const percentage = Math.min((elapsed / duration) * 100, 100)
-  //     setProgress(Math.floor(percentage))
-
-  //     if (elapsed < duration) {
-  //       requestAnimationFrame(animate)
-  //     } else {
-  //       setTimeout(() => setLoading(false), 300) // fade delay
-  //     }
-  //   }
-
-  //   requestAnimationFrame(animate)
-  // }, [])
   useEffect(() => {
     document.body.classList.add('preload-active')
 

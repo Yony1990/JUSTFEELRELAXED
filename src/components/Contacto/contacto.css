@@ -76,7 +76,8 @@
   transition: all .4s ease;
 }
 
-.content-redes-social.open li:nth-child(3){
+.content-redes-social.open li:nth-child(3),
+.content-redes-social.open li:nth-child(4) {
     padding: 8px 8px;
 }
 
@@ -96,10 +97,15 @@
 
 .content-redes-social.open li:nth-child(3):hover {
     background-color: rgb(223, 152, 76);
-    padding: 8px 9px;
+   
 }
 
 .content-redes-social.open li:nth-child(4):hover {
+    background-color: rgb(8, 121, 208);
+    
+}
+
+.content-redes-social.open li:nth-child(5):hover {
     background-color: rgb(255, 0, 0);
 }
 
@@ -107,6 +113,7 @@
 .content-redes-social.open li:nth-child(2) { transition-delay: .15s; }
 .content-redes-social.open li:nth-child(3) { transition-delay: .25s; }
 .content-redes-social.open li:nth-child(4) { transition-delay: .35s; }
+.content-redes-social.open li:nth-child(5) { transition-delay: .45s; }
 
 .contact-btn-header i {
     display: none;
@@ -136,6 +143,6 @@
   
   .content-redes-social {
     left: 20px;
-    top: -215px;
+    top: -260px;
   }
 }

@@ -3,23 +3,22 @@ import "./header2.css";
 import Logo from '../../assets/img/logoSinFondo.png';
 
 const sections = [
-  // { id: "inicio", label: "Inicio" },
-  // { id: "quienes-somos", label: "Somos" },
-  // { id: "servicios", label: "Servicios" },
 
-  // { id: "equipo", label: "Equipo" },
-  // { id: "blog", label: "Blog" },
-  // { id: "testimonios", label: "Testimonios" },
-  // { id: "galeria", label: "Galería" },
-  // { id: "faq", label: "Preguntas" },
+  // { id: "inicio", label: "Home" },
+  // { id: "quienes-somos", label: "About Us" },
+  // { id: "servicios", label: "Services" },
+  // { id: "galeria", label: "Galery" },
+  // { id: "equipo", label: "Team" },
+  // { id: "testimonios", label: "Reviews" },
+  // { id: "faq", label: "Questions" },
 
-  { id: "inicio", label: "Home" },
-  { id: "quienes-somos", label: "About Us" },
-  { id: "servicios", label: "Services" },
-  { id: "galeria", label: "Galery" },
+  { id: "inicio", label: "Hjem" },
+  { id: "quienes-somos", label: "Om os" },
+  { id: "servicios", label: "Ydelser" },
+  { id: "galeria", label: "Galleri" },
   { id: "equipo", label: "Team" },
-  { id: "testimonios", label: "Reviews" },
-  { id: "faq", label: "Questions" },
+  { id: "testimonios", label: "Anmeldelser" },
+  { id: "faq", label: "Spørgsmål" },
 ];
 
 

@@ -23,7 +23,6 @@ const images = [
   { src: img1, size: "medium" },
   { src: img2, size: "large" },
   { src: img3, size: "medium" },
-  // { src: img4, size: "medium" },
   { src: img5, size: "wide" },
   { src: img6, size: "large" },
   { src: img7, size: "medium" },
@@ -35,7 +34,7 @@ const images = [
   { src: img12, size: "medium" },
   { src: img13, size: "medium" },
   { src: img14, size: "medium" },
-  { src: img15, size: "wide" },
+  { src: img15, size: "medium" },
 ];
 
 const Galery = () => {
@@ -48,8 +47,8 @@ const Galery = () => {
     <section className="gallery-section" id="galeria">
 
       <div className="nombGale">
-          <h2>Galery</h2>
-          <span>“Details That Reflect Our Essence”</span>
+          <h2>Galleri</h2>
+          <span>“Detaljer Der Reflekterer Vores Essens”</span>
       </div>
 
 
@@ -65,7 +64,7 @@ const Galery = () => {
               <img src={img.src} alt={img.title} />
               <div className="overlay">
                 <div className="description">
-                  <span className="cursor-target">TAKE A LOOK</span>
+                  <span className="cursor-target">TAG ET KIG</span>
                 </div>
               </div>
             </div>

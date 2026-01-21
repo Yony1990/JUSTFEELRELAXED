@@ -7,40 +7,40 @@ export default function UbicacionFaq() {
 
   const faqs = [
     {
-      question: "Is Advance Booking Required?",
-      answer: "Yes, we suggest making your reservation at least one day in advance to ensure availability.",
+      question: "Er det nødvendigt at reservere på forhånd?",
+      answer: "Ja, vi anbefaler, at du foretager din reservation mindst en dag i forvejen for at sikre tilgængelighed.",
     },
     {
-      question: "Do You Accept Card Payments?",
-      answer: "Yes, we accept debit and credit cards, as well as digital payment methods.",
+      question: "Accepterer I kortbetalinger?",
+      answer: "Ja, vi accepterer betalingskort og kreditkort samt digitale betalingsmetoder.",
     },
     {
-      question: "What Do I Need to Bring to My Appointment?",
-      answer: "You don’t need to bring anything special, just comfortable clothes. We take care of the rest.",
+      question: "Hvad skal jeg medbringe til min aftale?",
+      answer: "Du behøver ikke medbringe noget særligt, bare behageligt tøj. Vi tager os af resten.",
     },
     {
-      question: "Is It Possible to Cancel a Booking?",
-      answer: "Yes, you can cancel at least 3 hours in advance with no penalty.",
+      question: "Er det muligt at annullere en reservation?",
+      answer: "Ja, du kan afbestille mindst 3 timer i forvejen uden strafgebyr.",
     },
     {
-      question: "Do You Offer Prenatal Massages?",
-      answer: "Yes, we provide prenatal massages specifically designed for women who are over 12 weeks pregnant.",
+      question: "Tilbyder I graviditetsmassage?",
+      answer: "Ja, vi tilbyder graviditetsmassage, der er specielt udviklet til kvinder, der er mere end 12 uger henne i graviditeten.",
     },
     {
-      question: "Are the Massages Performed by Professionals?",
-      answer: "Yes, all our therapists are certified and experienced.",
+      question: "Udføres massage af professionelle?",
+      answer: "Ja, alle vores terapeuter er certificerede og erfarne.",
     },
     {
-      question: "How Long Does a Session Last?",
-      answer: "The duration of most massages ranges from 45 to 60 minutes, depending on the treatment.",
+      question: "Hvor lang tid varer en session?",
+      answer: "De fleste massagebehandlinger varer mellem 45 og 60 minutter, afhængigt af behandlingen.",
     },
     {
-      question: "What Happens If I’m Late for My Appointment?",
-      answer: "If you arrive late, the session duration may be reduced to accommodate the following appointments.",
+      question: "Hvad sker der, hvis jeg kommer for sent til min aftale?",
+      answer: "Hvis du kommer for sent, kan sessionens varighed blive reduceret for at imødekomme de efterfølgende aftaler.",
     },
     {
-      question: "Can I Choose a Male or Female Therapist?",
-      answer: "Yes, when making your reservation you can select your preferred professional.",
+      question: "Kan jeg vælge en mandlig eller kvindelig terapeut?",
+      answer: "Ja, når du foretager din reservation, kan du vælge din foretrukne professionelle..",
     },
     // {
     //   question: "Is Parking Available?",
@@ -61,8 +61,8 @@ export default function UbicacionFaq() {
       
 
       <div className="faq-container">
-        <h2 className="faq-title">Frequently Asked Questions</h2>
-        <span className="client-pregunt">Easily Access the Information You Need</span>
+        <h2 className="faq-title">Ofte Stillede Spørgsmål</h2>
+        <span className="client-pregunt">Få nem adgang til de oplysninger, du har brug for</span>
 
         <div className="faq-list">
           {faqs.map((item, index) => (
@@ -93,13 +93,13 @@ export default function UbicacionFaq() {
 
       <div className="map-container">
 
-        <h2 className="map-title">Find Us</h2>
-        <span className="direcctionss">Peders Skrams Gade 11, Copenhague Dinamarca</span>
+        <h2 className="map-title">Find Os</h2>
+        <span className="direcctionss">Peders Skrams Gade 11, København Danmark</span>
 
         <div className="container-all-map">
           <div className="map-card">
             <a target="_blank" href="https://maps.app.goo.gl/b5gLfcRBSwc5tnan8">
-              <span className="cursor-target">WE ARE HERE</span>
+              <span className="cursor-target">VI ER HER</span>
             </a>
             <div className="degrade"></div>
             <img src={map} alt="" />
@@ -107,20 +107,20 @@ export default function UbicacionFaq() {
 
           <div className="container-other">
             <div className="horario">
-              <p>Business Hours</p>
+              <p>Åbningstider</p>
               <span>10:00 AM - 8:00 PM</span>
             </div>
 
-            <h4>Our Space</h4>
+            <h4>Vores Rume</h4>
 
             <div className="politica">
               
               <ul>
-                <li><span>⦿</span> Climate Controlled</li>
-                <li><span>⦿</span> Soothing Music</li>
-                <li><span>⦿</span> Sanitized Towels</li>
-                <li><span>⦿</span> Premium Products</li>
-                <li><span>⦿</span> Professional</li>
+                <li><span>⦿</span> Klimakontrolleret</li>
+                <li><span>⦿</span> Beroligende Musik</li>
+                <li><span>⦿</span> Desinficerede Håndklæder</li>
+                <li><span>⦿</span> Premium-Produkter</li>
+                <li><span>⦿</span> Professionel</li>
               </ul>
             </div>
           </div>
@@ -128,17 +128,17 @@ export default function UbicacionFaq() {
 
         <div className="text-local">
           <div className="info-card">
-            <h4>Guest Policy</h4>
+            <h4>Gæstepolitik</h4>
             <ul>
-              <li><span>⦿</span> Advance Booking Required</li>
-              <li><span>⦿</span> Arrive 5–10 Minutes Early</li>
-              <li><span>⦿</span> By Appointment Only</li>
-              <li><span>⦿</span> Strict Sanitation Protocols</li>
+              <li><span>⦿</span> Forudbestilling Påkrævet</li>
+              <li><span>⦿</span> Kom 5–10 Minutter før Tid</li>
+              <li><span>⦿</span> Kun Efter Aftale</li>
+              <li><span>⦿</span> Strenge Hygiejneprotokoller</li>
               <li
                 className="cursor-target"
                 onClick={() => setShowPolicyModal(true)}
               >
-                Cancellation Policy
+                Afbestillingspolitik
               </li>
 
             </ul>
@@ -160,42 +160,42 @@ export default function UbicacionFaq() {
             className="policy-modal"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2>Complaints Policy (Summary)</h2>
+            <h2>Klagepolitik</h2>
 
             <p>
-              Our clinic is committed to providing a professional and high-quality service.
-              If you believe your experience did not meet expectations, you may submit a
-              complaint through the following channels: in person at reception, by email,
-              via our website contact form, or through WhatsApp.
+              Vores klinik er forpligtet til at levere en professionel service af høj kvalitet.
+Hvis du mener, at din oplevelse ikke levede op til dine forventninger, kan du indgive en
+klage via følgende kanaler: personligt i receptionen, via e-mail,
+via vores kontaktformular på hjemmesiden eller via WhatsApp.
             </p>
 
             <p>
-              Complaints must be submitted within 72 hours of the service date and should
-              include your full name, service date and time, and a brief description of the issue.
+              Klager skal indgives inden for 72 timer efter servicetidspunktet og skal
+              indeholde dit fulde navn, servicetidspunkt og -tidspunkt samt en kort beskrivelse af problemet.
             </p>
 
             <p>
-              All complaints are reviewed confidentially, and a response will be provided
-              within 5 business days. Depending on the case, we may offer a service repeat,
-              a service credit, or other appropriate corrective measures.
+              Alle klager behandles fortroligt, og der gives svar
+inden for 5 hverdage. Afhængigt af sagen kan vi tilbyde en gentagelse af tjenesten,
+en servicekredit eller andre passende korrigerende foranstaltninger.
             </p>
 
             <p>
-              Refunds are not issued once a service has started or been completed, unless
-              required by applicable law.
+              Der udstedes ikke refusion, når en tjeneste er påbegyndt eller afsluttet, medmindre
+              det kræves af gældende lovgivning.
             </p>
 
             <p>
-              By booking or receiving our services, you agree to this Complaints Policy.
+              Ved at booke eller modtage vores tjenester accepterer du denne klagepolitik.
             </p>
 
             <div className="policy-modal-actions">
-              <button className="btn-cancel cursor-target">Cancel Appointment</button>
+              <button className="btn-cancel cursor-target">Aflys aftale</button>
               <button
                 className="btn-close cursor-target"
                 onClick={() => setShowPolicyModal(false)}
               >
-                Close
+                Luk
               </button>
             </div>
           </div>

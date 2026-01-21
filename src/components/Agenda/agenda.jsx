@@ -8,27 +8,27 @@ export default function ComoAgendarme() {
     {
       id: "01",
       img: img1,
-      title: "CHOOSE YOUR PROFESSIONAL",
+      title: "VÆLG DIN PROFESSIONELLE",
       icon: <i className="bi bi-person-raised-hand"></i>,
     },
     {
       id: "02",
       img: img2,
-      title: "CHOOSE YOUR SERVISE",
+      title: "VÆLG DIN SERVICE",
       icon: <i className="bi bi-hand-thumbs-up"></i>,
     },
     {
       id: "03",
       img: img3,
-      title: "SCHEDULE YOUR APPOINTMENT",
+      title: "BOOK DIN AFTALE",
       icon: <i className="bi bi-journal-check"></i>,
     },
   ];
 
   return (
     <section className="agendarme-section">
-      <p className="agendarme-subtitle">3 Simple Steps</p>
-      <h2 className="agendarme-title">HOW TO BOOK?</h2>
+      <p className="agendarme-subtitle">3 Enkle Trin</p>
+      <h2 className="agendarme-title">HVORDAN BOOKER MAN?</h2>
 
       <div className="steps-wrapper">
         <div className="container-linea">
@@ -69,7 +69,7 @@ export default function ComoAgendarme() {
       </div>
 
       <div className="btn-wrapper">
-        <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="btn-agendar cursor-target">BOOK NOW</button></a>
+        <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="btn-agendar cursor-target">BOOK NU</button></a>
       </div>
     </section>
   );

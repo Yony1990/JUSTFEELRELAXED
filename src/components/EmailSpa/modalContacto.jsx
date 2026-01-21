@@ -53,31 +53,31 @@ const ModalContacto = ({ isOpen, onClose }) => {
       <div className="modal-box">
         {!sent ? (
           <>
-            <h2>Contact</h2>
+            <h2>Kontakt</h2>
 
             <form onSubmit={handleSubmit}>
-              <input type="text" name="from_name" placeholder="Your Name" required />
+              <input type="text" name="from_name" placeholder="Dit Navn" required />
 
               <input
                 type="email"
                 name="reply_to"
-                placeholder="Email Address"
+                placeholder="E-mailadresse"
                 required
               />
 
               <textarea
                 name="message"
-                placeholder="Type your message…"
+                placeholder="Skriv din besked…"
                 required
               ></textarea>
 
               <button className="cursor-target send-btn" type="submit" disabled={loading}>
-                {loading ? "Sending message…" : "Send"}
+                {loading ? "Sender besked…" : "Send"}
               </button>
             </form>
           </>
         ) : (
-          <h3 className="sent-msg">Message Sent Successfully!</h3>
+          <h3 className="sent-msg">Beskeden er Sendt!</h3>
         )}
 
         <button className="close-btn cursor-target" onClick={onClose}>

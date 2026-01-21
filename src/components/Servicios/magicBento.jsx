@@ -21,41 +21,78 @@ const DEFAULT_GLOW_COLOR = '243, 145, 76';
 const MOBILE_BREAKPOINT = 768;
 
 const cardData = [
+  // {
+  //   image: img1,
+  //   title: 'Sports Massage',
+  //   description: 'A focused therapeutic massage designed to enhance performance, reduce muscle tension, and support faster recovery after physical activity.',
+  //   label: 'Sports'
+  // },
+  // {
+  //   image: img2,
+  //   title: 'Relaxation Massage',
+  //   description: 'A gentle massage that promotes deep relaxation, relieves stress, and restores balance to body and mind.',
+  //   label: 'Relaxation'
+  // },
+  // {
+  //   image: img9,
+  //   title: 'Balinese Massage',
+  //   description: 'A traditional Balinese massage blending deep pressure, gentle stretches, and rhythmic movements to relieve tension, improve circulation, restore energy flow, and promote profound relaxation and overall well-being.',
+  //   label: 'Balinese'
+  // },
+  
+  // {
+  //   image: img5,
+  //   title: 'Lymphatic Massage',
+  //   description: 'A gentle lymphatic massage that stimulates circulation, reduces swelling, supports detoxification, boosts immune function, improves skin appearance, and promotes overall relaxation and wellness through rhythmic techniques and light pressure applied.',
+  //   label: 'Lymphatic'
+  // },
+  // {
+  //   image: img10,
+  //   title: 'Prenatal Massage',
+  //   description: 'A gentle prenatal massage that relieves tension, reduces stress, and supports comfort and well-being during pregnancy.',
+  //   label: 'Prenatal'
+  // },
+  // {
+  //   image: img11,
+  //   title: 'Muskelafspændende',
+  //   description: 'A deep therapeutic massage focused on releasing muscle knots, relieving chronic tension, and restoring mobility and muscular balance.',
+  //   label: 'Muskelafspændende'
+  // }
   {
     image: img1,
-    title: 'Sports Massage',
-    description: 'A focused therapeutic massage designed to enhance performance, reduce muscle tension, and support faster recovery after physical activity.',
-    label: 'Sports'
+    title: 'Sportsmassage',
+    description: 'Målrettet terapeutisk massage, der forbedrer præstation, reducerer muskelspændinger og understøtter hurtigere restitution efter fysisk aktivitet.',
+    label: 'Sport'
   },
   {
     image: img2,
-    title: 'Relaxation Massage',
-    description: 'A gentle massage that promotes deep relaxation, relieves stress, and restores balance to body and mind.',
-    label: 'Relaxation'
+    title: 'Afslappende massage',
+    description: 'En blid massage, der fremmer dyb afslapning, lindrer stress og genopretter balancen mellem krop og sind.',
+    label: 'Afslapning'
   },
   {
     image: img9,
-    title: 'Balinese Massage',
-    description: 'A traditional Balinese massage blending deep pressure, gentle stretches, and rhythmic movements to relieve tension, improve circulation, restore energy flow, and promote profound relaxation and overall well-being.',
-    label: 'Balinese'
+    title: 'Balinesisk massage',
+    description: 'En traditionel balinesisk massage, der kombinerer dybt tryk, blide stræk og rytmiske bevægelser for at lindre spændinger, forbedre blodcirkulationen, genoprette energiflowet og fremme dyb afslapning og generelt velvære.',
+    label: 'Balinesisk'
   },
   
   {
     image: img5,
-    title: 'Lymphatic Massage',
-    description: 'A gentle lymphatic massage that stimulates circulation, reduces swelling, supports detoxification, boosts immune function, improves skin appearance, and promotes overall relaxation and wellness through rhythmic techniques and light pressure applied.',
-    label: 'Lymphatic'
+    title: 'Lymfedrænage',
+    description: 'En blid lymfedrænagemassage, der stimulerer cirkulationen, reducerer hævelse, understøtter afgiftning, styrker immunfunktionen, forbedrer hudens udseende og fremmer generel afslapning og velvære gennem rytmiske teknikker og let tryk.',
+    label: 'Lymfatisk'
   },
   {
     image: img10,
-    title: 'Prenatal Massage',
-    description: 'A gentle prenatal massage that relieves tension, reduces stress, and supports comfort and well-being during pregnancy.',
-    label: 'Prenatal'
+    title: 'Gravidmassage',
+    description: 'En blid gravidmassage, der lindrer spændinger, reducerer stress og understøtter komfort og velvære under graviditeten.',
+    label: 'Gravid'
   },
   {
     image: img11,
     title: 'Muskelafspændende',
-    description: 'A deep therapeutic massage focused on releasing muscle knots, relieving chronic tension, and restoring mobility and muscular balance.',
+    description: 'En dybdegående terapeutisk massage med fokus på at løsne muskelknuder, lindre kroniske spændinger og genskabe bevægelighed samt muskulær balance.',
     label: 'Muskelafspændende'
   }
 ];
@@ -686,7 +723,7 @@ const magicBento = ({
                     </p>
                     <div className="card-curtain__actions">
                       <a target="_blank" href="https://just-feel-relaxed.planway.com/"><button className="btn-contratar cursor-target" type="button">
-                        Contratar
+                        Bestil
                       </button></a>
                     </div>
                   </div>

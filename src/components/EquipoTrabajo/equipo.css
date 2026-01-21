@@ -60,12 +60,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: relative;
   bottom: 120px;
 }
 
 .img-wrapper img {
+  border-radius: 15px;
   width: 100%;
   object-fit: contain;
   cursor: pointer;
@@ -80,6 +80,7 @@
   white-space: nowrap;
   font-weight: 900;
   font-size: 4rem;
+
 }
 
 .name-tag p {

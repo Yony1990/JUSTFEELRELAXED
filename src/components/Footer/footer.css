@@ -75,6 +75,16 @@
   opacity: 0.6;
 }
 
+.developer {
+  font-size: 12px;
+  padding: 10px;
+  opacity: 0.6;
+  color: rgb(255, 212, 155);
+}
+/* .developer a {
+  color: rgb(255, 212, 155);
+} */
+
 /* INFO */
 .footer-info button {
   display: block;
@@ -93,10 +103,16 @@
   opacity: 1;
 }
 
-.location,
+
 .hours {
   font-size: 13px;
   margin-top: 15px;
+  opacity: 0.6;
+}
+
+.location {
+  font-size: 13px;
+
   opacity: 0.6;
 }
 

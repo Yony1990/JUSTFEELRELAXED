@@ -30,7 +30,7 @@ const Contacto = () => {
             className="cursor-target contact-btn-header"
             onClick={() => setOpen(!open)}
           >
-            <span>Contact</span>
+            <span>Kontakt</span>
             <i className="bi bi-person-lines-fill"></i>
           </div>
 
@@ -54,8 +54,13 @@ const Contacto = () => {
             </li>
 
             <li className='cursor-target' onClick={handleItemClick}>
+              <span><i class="bi bi-facebook"></i></span>
+            </li>
+
+            <li className='cursor-target' onClick={handleItemClick}>
               <span><i className="bi bi-youtube"></i></span>
             </li>
+            
           </ul>
 
         </div>

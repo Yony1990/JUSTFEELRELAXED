@@ -5,13 +5,20 @@ import HeaderMobil from '../Header2/header2';
 import Logo from '../../assets/img/logoSinFondo.png';
 
 const sections = [
-  { id: "inicio", label: "Home" },
-  { id: "quienes-somos", label: "About Us" },
-  { id: "servicios", label: "Services" },
-  { id: "galeria", label: "Galery" },
+  // { id: "inicio", label: "Home" },
+  // { id: "quienes-somos", label: "About Us" },
+  // { id: "servicios", label: "Services" },
+  // { id: "galeria", label: "Galery" },
+  // { id: "equipo", label: "Team" },
+  // { id: "testimonios", label: "Reviews" },
+  // { id: "faq", label: "Questions" },
+  { id: "inicio", label: "Hjem" },
+  { id: "quienes-somos", label: "Om os" },
+  { id: "servicios", label: "Ydelser" },
+  { id: "galeria", label: "Galleri" },
   { id: "equipo", label: "Team" },
-  { id: "testimonios", label: "Reviews" },
-  { id: "faq", label: "Questions" },
+  { id: "testimonios", label: "Anmeldelser" },
+  { id: "faq", label: "Spørgsmål" },
 ];
 
 

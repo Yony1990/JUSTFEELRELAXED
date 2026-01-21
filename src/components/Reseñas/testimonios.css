@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px 10px;
+  padding: 3px 3px 3px 10px;
   font-weight: 550;
   font-size: .7em;
   border-radius: 20px;
@@ -87,6 +87,18 @@
   background-color: rgb(235, 235, 235);
   border-radius: 50%;
   padding: 3px;
+}
+.name-Team .btn-trust {
+  background-color: #007f4e;
+}
+
+.name-Team .btn-trust img {
+  width: 70px;
+  height: 20px;
+  object-fit: contain;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  /* padding: 3px; */
 }
 
 .container-name-Team .foto-Team {
@@ -150,6 +162,9 @@
 }
 
 .testimonio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   scroll-snap-align: start;
   background: rgba(22, 22, 22, 0.54);
   margin-top: 20px;
@@ -293,7 +308,7 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
     
   }

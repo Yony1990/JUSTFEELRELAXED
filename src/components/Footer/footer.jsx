@@ -4,37 +4,37 @@ import logo from "../../assets/img/logoSinFondo.png";
 
 const legalContent = {
   privacy: {
-    title: "Privacy Policy",
+    title: "Fortrolighedspolitik",
     text: `
-We are committed to protecting the privacy and personal data of our clients and website visitors in accordance with the General Data Protection Regulation (GDPR) and applicable Danish data protection laws. This Privacy Policy explains how personal information may be collected when you visit our website, contact our massage clinic, or book an appointment. The personal data we may collect includes your name, contact details, appointment information, and any other information you voluntarily provide through forms, email, phone, or other communication channels. All data is collected fairly, lawfully, and transparently, and only for clearly defined and legitimate purposes related to our services.
+Vi forpligter os til at beskytte vores kunders og hjemmesidebesøgendes privatliv og personlige data i overensstemmelse med den generelle forordning om databeskyttelse (GDPR) og gældende danske lovgivning om databeskyttelse. Denne privatlivspolitik forklarer, hvordan personlige oplysninger kan indsamles, når du besøger vores hjemmeside, kontakter vores massageklinik eller booker en tid. De personoplysninger, vi kan indsamle, omfatter dit navn, kontaktoplysninger, aftaleoplysninger og andre oplysninger, du frivilligt giver via formularer, e-mail, telefon eller andre kommunikationskanaler. Alle data indsamles på en retfærdig, lovlig og gennemsigtig måde og kun til klart definerede og legitime formål i forbindelse med vores tjenester.
 
-Personal data is processed solely for the purposes of managing bookings, providing massage and wellness services, responding to inquiries, maintaining client records, and improving the overall quality of our services. We do not sell, trade, or otherwise transfer your personal data to third parties, unless required by law, necessary to comply with legal obligations, or essential to protect our legal rights and interests. Appropriate technical and organizational measures are implemented to ensure a level of security appropriate to the risk, including protection against unauthorized access, accidental loss, destruction, or unlawful processing of personal data.
+Personoplysninger behandles udelukkende med henblik på at administrere bookinger, levere massage- og wellness-ydelser, besvare forespørgsler, vedligeholde kunderegistre og forbedre den samlede kvalitet af vores ydelser. Vi sælger, handler eller på anden måde overfører ikke dine personoplysninger til tredjeparter, medmindre det er påkrævet ved lov, nødvendigt for at overholde juridiske forpligtelser eller afgørende for at beskytte vores juridiske rettigheder og interesser. Der implementeres passende tekniske og organisatoriske foranstaltninger for at sikre et sikkerhedsniveau, der er passende i forhold til risikoen, herunder beskyttelse mod uautoriseret adgang, utilsigtet tab, ødelæggelse eller ulovlig behandling af personoplysninger.
 
-Under the GDPR, you have the right to access your personal data, request rectification or erasure, restrict or object to processing, and request data portability where applicable. You also have the right to withdraw your consent at any time without affecting the lawfulness of processing carried out prior to withdrawal. This Privacy Policy may be updated periodically to reflect changes in legal requirements or our internal practices. We encourage users to review this policy regularly to remain informed about how their personal data is collected, used, and protected.
+I henhold til GDPR har du ret til at få adgang til dine personoplysninger, anmode om berigtigelse eller sletning, begrænse eller gøre indsigelse mod behandling og anmode om dataportabilitet, hvor det er relevant. Du har også ret til at trække dit samtykke tilbage når som helst uden at det påvirker lovligheden af den behandling, der er foretaget før tilbagetrækningen. Denne privatlivspolitik kan opdateres med jævne mellemrum for at afspejle ændringer i lovkrav eller vores interne praksis. Vi opfordrer brugerne til at gennemgå denne politik regelmæssigt for at holde sig informeret om, hvordan deres personoplysninger indsamles, bruges og beskyttes.
 `
   },
   terms: {
-    title: "Terms & Conditions",
+    title: "Vilkår og betingelser",
     text: `
-By accessing this website and using our services, you agree to comply with and be bound by these Terms & Conditions, as well as all applicable Danish laws and regulations. Our massage services are provided strictly for wellness and therapeutic purposes and do not constitute medical treatment. Appointments are subject to availability and may require prior booking. We reserve the right to refuse service in cases of inappropriate behavior, late arrival, or failure to comply with our professional standards. All information provided on this website is for general informational purposes only and may be modified at any time without prior notice.
+Ved at besøge denne hjemmeside og benytte vores tjenester accepterer du at overholde og være bundet af disse vilkår og betingelser samt alle gældende danske love og regler. Vores massagetjenester leveres udelukkende til wellness- og terapeutiske formål og udgør ikke medicinsk behandling. Aftaler afhænger af tilgængelighed og kan kræve forudgående booking. Vi forbeholder os ret til at nægte service i tilfælde af upassende adfærd, forsinket ankomst eller manglende overholdelse af vores professionelle standarder. Alle oplysninger på denne hjemmeside er kun til generelle informationsformål og kan ændres når som helst uden forudgående varsel.
 
-Clients are responsible for providing accurate and complete information when booking appointments and for informing us of any relevant health conditions prior to treatment. Cancellations or changes to appointments must be made within the time frame communicated at the time of booking. We are not liable for any indirect, incidental, or consequential damages arising from the use of our website or services, to the fullest extent permitted under Danish law. These Terms & Conditions may be updated periodically, and continued use of the website or services constitutes acceptance of any such changes.
+Kunderne er ansvarlige for at give nøjagtige og fuldstændige oplysninger, når de booker aftaler, og for at informere os om eventuelle relevante helbredsmæssige forhold inden behandlingen. Aflysninger eller ændringer af aftaler skal foretages inden for den tidsramme, der er oplyst ved booking. Vi er ikke ansvarlige for indirekte, tilfældige eller følgeskader, der opstår som følge af brugen af vores hjemmeside eller tjenester, i det omfang det er tilladt i henhold til dansk lovgivning. Disse vilkår og betingelser kan opdateres med jævne mellemrum, og fortsat brug af hjemmesiden eller tjenesterne udgør accept af sådanne ændringer.
 `
   },
   cookies: {
-    title: "Cookie Policy",
+    title: "Cookiepolitik",
     text: `
-This website uses cookies and similar technologies to ensure proper functionality, enhance user experience, and analyze website performance in accordance with the General Data Protection Regulation (GDPR) and applicable Danish and EU data protection laws. Cookies are small text files stored on your device when you visit our website and may include strictly necessary cookies required for the operation of the site, as well as optional cookies used for analytical or functional purposes. We do not use cookies to collect sensitive personal data, and any non-essential cookies are used only with your explicit consent.
+Dette websted bruger cookies og lignende teknologier til at sikre korrekt funktionalitet, forbedre brugeroplevelsen og analysere webstedets ydeevne i overensstemmelse med den generelle forordning om databeskyttelse (GDPR) og gældende danske og EU-lovgivning om databeskyttelse. Cookies er små tekstfiler, der gemmes på din enhed, når du besøger vores websted, og kan omfatte strengt nødvendige cookies, der er nødvendige for driften af webstedet, samt valgfri cookies, der bruges til analytiske eller funktionelle formål. Vi bruger ikke cookies til at indsamle følsomme personoplysninger, og alle ikke-væsentlige cookies bruges kun med dit udtrykkelige samtykke.
 
-You have the right to accept, reject, or manage cookie preferences at any time through your browser settings or any cookie consent tool provided on this website. Disabling certain cookies may affect the functionality or performance of the site. We may update this Cookie Policy periodically to reflect changes in legal requirements or the technologies we use. We encourage users to review this policy regularly to stay informed about how cookies are used and how you can control them.
+Du har ret til at acceptere, afvise eller administrere cookieindstillinger til enhver tid via dine browserindstillinger eller ethvert cookie-samtykkewærktøj, der findes på dette websted. Deaktivering af visse cookies kan påvirke webstedets funktionalitet eller ydeevne. Vi kan opdatere denne cookiepolitik med jævne mellemrum for at afspejle ændringer i lovkrav eller de teknologier, vi bruger. Vi opfordrer brugerne til at gennemgå denne politik regelmæssigt for at holde sig informeret om, hvordan cookies bruges, og hvordan du kan kontrollere dem.
 `
   },
   legal: {
-    title: "Legal Notice",
+    title: "Juridisk meddelelse",
     text: `
-This website is operated by a massage and wellness business established in Denmark and is provided for informational purposes only. All content published on this website, including texts, images, logos, and design elements, is the property of the business or used with appropriate authorization and is protected by applicable Danish and international intellectual property laws. Unauthorized reproduction, distribution, modification, or use of any content from this website without prior written consent is strictly prohibited.
+Denne hjemmeside drives af en massage- og wellnessvirksomhed med hjemsted i Danmark og er udelukkende til orientering. Alt indhold, der offentliggøres på denne hjemmeside, herunder tekster, billeder, logoer og designelementer, tilhører virksomheden eller anvendes med behørig tilladelse og er beskyttet af gældende dansk og international lovgivning om intellektuel ejendomsret. Uautoriseret reproduktion, distribution, ændring eller brug af indhold fra denne hjemmeside uden forudgående skriftlig tilladelse er strengt forbudt.
 
-The owner of this website does not guarantee the accuracy, completeness, or timeliness of the information provided and reserves the right to modify or remove content at any time without prior notice. The business shall not be held liable for any damages arising from access to, use of, or inability to use this website, to the fullest extent permitted under Danish law. This Legal Notice is governed by Danish legislation, and any disputes arising in connection with the use of this website shall be subject to the exclusive jurisdiction of the competent courts of Denmark.
+Ejeren af denne hjemmeside garanterer ikke for nøjagtigheden, fuldstændigheden eller aktualiteten af de leverede oplysninger og forbeholder sig ret til at ændre eller fjerne indhold til enhver tid uden forudgående varsel. Virksomheden kan ikke holdes ansvarlig for skader, der opstår som følge af adgang til, brug af eller manglende evne til at bruge denne hjemmeside, i det omfang det er tilladt i henhold til dansk lovgivning. Denne juridiske meddelelse er underlagt dansk lovgivning, og eventuelle tvister i forbindelse med brugen af denne hjemmeside er underlagt de kompetente domstoles enekompetence i Danmark.
 `
   }
 };
@@ -55,31 +55,32 @@ const footer = () => {
 
           {/* QUICK LINKS */}
           <div className="footer-links">
-            <h4>Quick Links</h4>
-            <a className="cursor-target" href="#inicio">• Home</a>
-            <a className="cursor-target" href="#quienes-somos">• About Us</a>
-            <a className="cursor-target" href="#servicios">• Services</a>
-            <a className="cursor-target" href="#galeria">• Gallery</a>
-            <a className="cursor-target" href="#testimonios">• Reviews</a>
-            <a className="cursor-target" href="#faq">• FAQ</a>
+            <h4>Hurtige links</h4>
+            <a className="cursor-target" href="#inicio">• Hjem</a>
+            <a className="cursor-target" href="#quienes-somos">• Om Os</a>
+            <a className="cursor-target" href="#servicios">• Ydelser</a>
+            <a className="cursor-target" href="#galeria">• Galleri</a>
+            <a className="cursor-target" href="#testimonios">• Anmeldelser</a>
+            <a className="cursor-target" href="#faq">• Spørgsmål</a>
           </div>
 
           {/* BRAND */}
           <div className="footer-brand">
             <img src={logo} alt="Clinic logo" />
-            <p className="claim">Excellence in wellness & therapeutic care</p>
-            <p className="copy">© 2026 All rights reserved</p>
-            <p className="location">Dinamarca, Copenage</p>
-            <p className="hours">Mon – Sat · 9:00 – 20:00</p>
+            <p className="claim">Fremragende wellness og terapeutisk pleje</p>
+            <p className="copy">© Alle rettigheder forbeholdes</p>
+            <a target="_blank" className="cursor-target" href="https://yony1990.github.io/portafolio/"><p className="developer">Developed by Yony1990</p></a>
+            <p className="location">Danmark, København</p>
+            {/* <p className="hours">Mon – Sat · 9:00 – 20:00</p> */}
           </div>
 
           {/* INFORMATION */}
           <div className="footer-info">
-            <h4>Information</h4>
-            <button className="cursor-target" onClick={() => openModal("privacy")}>• Privacy Policy</button>
-            <button className="cursor-target" onClick={() => openModal("terms")}>• Terms & Conditions</button>
-            <button className="cursor-target" onClick={() => openModal("cookies")}>• Cookie Policy</button>
-            <button className="cursor-target" onClick={() => openModal("legal")}>• Legal Notice</button>
+            <h4>Oplysninger</h4>
+            <button className="cursor-target" onClick={() => openModal("privacy")}>• Fortrolighedspolitik</button>
+            <button className="cursor-target" onClick={() => openModal("terms")}>• Vilkår og Betingelser</button>
+            <button className="cursor-target" onClick={() => openModal("cookies")}>• Cookiepolitik</button>
+            <button className="cursor-target" onClick={() => openModal("legal")}>• Juridisk Meddelelse</button>
 
             
           </div>

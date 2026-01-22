@@ -54,7 +54,7 @@ const Contacto = () => {
             </li>
 
             <li className='cursor-target' onClick={handleItemClick}>
-              <span><i class="bi bi-facebook"></i></span>
+              <span><i className="bi bi-facebook"></i></span>
             </li>
 
             <li className='cursor-target' onClick={handleItemClick}>

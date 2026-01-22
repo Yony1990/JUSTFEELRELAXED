@@ -1,5 +1,5 @@
 import "./quienesSomos.css";
-import imgSpa from "../../assets/img/peaple/gastonFinal1.png";
+import imgSpa from "../../assets/img/peaple/GastonOrig2.png";
 import imgSpa1 from "../../assets/img/peaple/gastonReal.JPG";
 
 const QuienesSomos = () => {
@@ -48,7 +48,7 @@ const QuienesSomos = () => {
         {/* IMAGEN */}
         <div className="quienes-somos-img">
           <img src={imgSpa} alt="Centro de masajes" />
-          <div className="img-gradient-port" />
+          {/* <div className="img-gradient-port" /> */}
         </div>
 
       </div>

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./equipo.css";
 
-import man from "../../assets/img/peaple/gastonFinal1.png";
+// import man from "../../assets/img/peaple/gastonFinal1.png";
+import man from "../../assets/img/peaple/GastonOrig2.png";
 import man1 from "../../assets/img/peaple/gastonReal.JPG";
 import woman1 from "../../assets/img/imgMujer1.png";
 import woman2 from "../../assets/img/imgMujer2.png";
@@ -21,7 +22,7 @@ Amplia experiencia en recuperación muscular y lesiones.
   {
     name: "Sofia",
     lastName: "Sofia Lindholm",
-    img: woman1,
+    img: man,
     info: `
 Especialista en masajes de relajación profunda.
 8 años de experiencia en bienestar integral.
@@ -32,7 +33,7 @@ Enfoque en equilibrio cuerpo–mente.
   {
     name: "Emma",
     lastName: "Emma Sørensen",
-    img: woman2,
+    img: man,
     info: `
 Masajista corporal y estética.
 6 años de experiencia en drenaje linfático.

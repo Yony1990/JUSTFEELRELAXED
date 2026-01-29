@@ -21,16 +21,19 @@ import img17 from "../../assets/img/pre/img17.webp";
 
 const images = [
   { src: img16, size: "medium" },
+  { src: img8, size: "medium" },
   { src: img5, size: "wide" },
   { src: img2, size: "large" },
   
-  { src: img6, size: "large" },
+ 
   { src: img7, size: "medium" },
-  { src: img8, size: "medium" },
+  
   { src: img9, size: "medium" },
+  { src: img6, size: "large" },
   { src: img10, size: "medium" },
-  { src: img1, size: "medium" },
   { src: img17, size: "large" },
+  { src: img1, size: "medium" },
+  
   { src: img0, size: "wide" },
   { src: img11, size: "large" },
   { src: img12, size: "medium" },

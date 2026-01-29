@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import img from "../../assets/img/portada111.png";
-import img2 from "../../assets/img/SpaSession-1.jpg";
-import img3 from "../../assets/img/SpaSession-13.jpg";
+import img from "../../assets/img/portada/portada111_11zon.webp";
+import img2 from "../../assets/img/portada/SpaSession-1_11zon.webp";
+import img3 from "../../assets/img/portada/SpaSession-13_11zon.webp";
 import "./portada.css";
 
 const slides = [

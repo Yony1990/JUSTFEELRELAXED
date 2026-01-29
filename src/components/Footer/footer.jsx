@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./footer.css";
-import logo from "../../assets/img/logoSinFondo.png";
+import logo from "../../assets/img/logo/logoSinFondo.webp";
 
 const legalContent = {
   privacy: {

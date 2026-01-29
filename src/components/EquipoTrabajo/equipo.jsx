@@ -1,11 +1,8 @@
 import { useState } from "react";
 import "./equipo.css";
 
-// import man from "../../assets/img/peaple/gastonFinal1.png";
-import man from "../../assets/img/peaple/GastonOrig2.png";
-import man1 from "../../assets/img/peaple/gastonReal.JPG";
-import woman1 from "../../assets/img/imgMujer1.png";
-import woman2 from "../../assets/img/imgMujer2.png";
+import man from "../../assets/img/peaple/GastonOrig2.webp";
+
 
 const team = [
   {

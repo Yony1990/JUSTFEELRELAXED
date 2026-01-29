@@ -15,9 +15,7 @@ li {
 /* -------------------------------- MAPA -------------------------------- */
 .container-all-map {
   display: flex;
-  gap: 20px;
-  /* flex-wrap: wrap; */
-  
+  gap: 20px; 
 }
 .map-container {
   max-width: 600px;
@@ -72,10 +70,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.container-other .horario p {
-  
 }
 
 .container-other .horario span {
@@ -498,3 +492,12 @@ li {
   }
 
 }
+
+@media (max-width: 530px) {
+  .map-card a span {
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import Contact from '../Contacto/contacto';
 import HeaderMobil from '../Header2/header2';
-import Logo from '../../assets/img/logoSinFondo.png';
+import Logo from '../../assets/img/logo/logoSinFondo.webp';
 
 const sections = [
   // { id: "inicio", label: "Home" },

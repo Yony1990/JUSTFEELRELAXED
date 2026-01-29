@@ -1,34 +1,36 @@
 import React, { useState } from "react";
 import "./galery.css";
 
-// 🔹 Importás tus imágenes locales
-import img0 from "../../assets/img/pre/img0.jpg";
-import img1 from "../../assets/img/pre/img1.jpg";
-import img2 from "../../assets/img/pre/img2.jpg";
-import img3 from "../../assets/img/pre/img3.jpg";
-// import img4 from "../../assets/img/pre/img4.jpg";
-import img5 from "../../assets/img/pre/img5.jpg";
-import img6 from "../../assets/img/pre/img6.jpg";
-import img7 from "../../assets/img/pre/img7.jpg";
-import img8 from "../../assets/img/pre/img8.jpg";
-import img9 from "../../assets/img/pre/img9.jpg";
-import img10 from "../../assets/img/pre/img10.jpg";
-import img11 from "../../assets/img/pre/img11.jpg";
-import img12 from "../../assets/img/pre/img12.jpg";
-import img13 from "../../assets/img/pre/img13.jpg";
-import img14 from "../../assets/img/pre/img14.jpg";
-import img15 from "../../assets/img/pre/img15.jpg";
+import img0 from "../../assets/img/pre/img0.webp";
+import img1 from "../../assets/img/pre/img1.webp";
+import img2 from "../../assets/img/pre/img2.webp";
+import img3 from "../../assets/img/pre/img3.webp";
+import img5 from "../../assets/img/pre/img5.webp";
+import img6 from "../../assets/img/pre/img6.webp";
+import img7 from "../../assets/img/pre/img7.webp";
+import img8 from "../../assets/img/pre/img8.webp";
+import img9 from "../../assets/img/pre/img9.webp";
+import img10 from "../../assets/img/pre/img10.webp";
+import img11 from "../../assets/img/pre/img11.webp";
+import img12 from "../../assets/img/pre/img12.webp";
+import img13 from "../../assets/img/pre/img13.webp";
+import img14 from "../../assets/img/pre/img14.webp";
+import img15 from "../../assets/img/pre/img15.webp";
+import img16 from "../../assets/img/pre/img16.webp";
+import img17 from "../../assets/img/pre/img17.webp";
 
 const images = [
-  { src: img1, size: "medium" },
-  { src: img2, size: "large" },
-  { src: img3, size: "medium" },
+  { src: img16, size: "medium" },
   { src: img5, size: "wide" },
+  { src: img2, size: "large" },
+  
   { src: img6, size: "large" },
   { src: img7, size: "medium" },
   { src: img8, size: "medium" },
   { src: img9, size: "medium" },
   { src: img10, size: "medium" },
+  { src: img1, size: "medium" },
+  { src: img17, size: "large" },
   { src: img0, size: "wide" },
   { src: img11, size: "large" },
   { src: img12, size: "medium" },

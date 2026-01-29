@@ -1,7 +1,7 @@
 import "./agenda.css";
-import img1 from "../../assets/img/equipoMasaje.avif";
-import img2 from "../../assets/img/eligeServi.jpg";
-import img3 from "../../assets/img/agendando.avif";
+import img1 from "../../assets/img/agenda/equipoMasaje_11zon.webp";
+import img2 from "../../assets/img/agenda/eligeServi_11zon.webp";
+import img3 from "../../assets/img/agenda/agendando_11zon.webp";
 
 export default function ComoAgendarme() {
   const steps = [

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./efectoBajo.css";
 import Contact111 from '../Contacto/contacto';
-import img3 from "../../assets/img/fondoWhatsap.jpg";
+
 
 const EfectoBajo = () => {
   const iconRef = useRef(null);

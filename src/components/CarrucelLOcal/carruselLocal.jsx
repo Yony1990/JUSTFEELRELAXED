@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./carruselLocal.css";
 
-import imgLocal1 from '../../assets/img/pre/img0.jpg';
-import imgLocal2 from '../../assets/img/local/local1.JPG';
-import imgLocal3 from '../../assets/img/local/local2.JPG';
-import imgLocal4 from '../../assets/img/local/local3.JPG';
+import imgLocal1 from '../../assets/img/pre/img0.webp';
+import imgLocal2 from '../../assets/img/local/local1_11zon.webp';
+import imgLocal3 from '../../assets/img/local/local2_11zon.webp';
+import imgLocal4 from '../../assets/img/local/local3_11zon.webp';
 
 
 const Carrusel = () => {

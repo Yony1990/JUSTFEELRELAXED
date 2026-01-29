@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./header2.css";
-import Logo from '../../assets/img/logoSinFondo.png';
+
 
 const sections = [
 

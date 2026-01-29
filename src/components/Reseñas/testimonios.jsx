@@ -2,22 +2,21 @@ import React, { useEffect, useRef } from "react";
 import "./testimonios.css";
 
 // Avatares ejemplo (puedes reemplazar por los tuyos)
-import avatar1 from "../../assets/img/logo.png";
-import avatar2 from "../../assets/img/logo.png";
-import avatar3 from "../../assets/img/logo.png";
-import avatar4 from "../../assets/img/logo.png";
-import avatar5 from "../../assets/img/logo.png";
-import avatar6 from "../../assets/img/logo.png";
-import avatar7 from "../../assets/img/logo.png";
-import avatar8 from "../../assets/img/logo.png";
-import avatar9 from "../../assets/img/logo.png";
-import avatar10 from "../../assets/img/logo.png";
-import google from "../../assets/img/GoogleLogo.webp";
-import google2 from "../../assets/img/powered-by-google.png";
-import TrustP from "../../assets/img/trust.png";
+import avatar1 from "../../assets/img/testimonios/logo_11zon.webp";
+import avatar3 from "../../assets/img/testimonios/logo_11zon.webp";
+import avatar4 from "../../assets/img/testimonios/logo_11zon.webp";
+import avatar5 from "../../assets/img/testimonios/logo_11zon.webp";
+import avatar6 from "../../assets/img/testimonios/logo_11zon.webp";
+import avatar7 from "../../assets/img/testimonios/logo_11zon.webp";
 
-import Reseña1 from "../../assets/img/reseñas/unnamed.png";
-import Reseña2 from "../../assets/img/reseñas/unnamed2.png";
+import avatar9 from "../../assets/img/testimonios/logo_11zon.webp";
+import avatar10 from "../../assets/img/testimonios/logo_11zon.webp";
+import google from "../../assets/img/testimonios/GoogleLogo.webp";
+import google2 from "../../assets/img/testimonios/powered-by-google_1.webp";
+import TrustP from "../../assets/img/testimonios/trust_1.webp";
+
+import Reseña1 from "../../assets/img/reseñas/unnamed.webp";
+import Reseña2 from "../../assets/img/reseñas/unnamed2.webp";
 
 const testimonios = [
   

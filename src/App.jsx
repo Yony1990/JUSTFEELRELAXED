@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-import LogoPre from './assets/img/logoSinFondo.png';
+import LogoPre from './assets/img/logo/logoSinFondo.webp';
 import Portada from './components/Portada/portada'
 import Somos from './components/QuienesSomos/quienesSomos'
 import Header from "./components/Header/header";

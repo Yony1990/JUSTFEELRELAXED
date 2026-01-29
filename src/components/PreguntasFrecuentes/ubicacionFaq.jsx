@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ubicacionFaq.css";
 import Carrucel from "../CarrucelLOcal/carruselLocal";
-import map from '../../assets/img/map2.png';
+import map from '../../assets/img/map2_11zon.webp';
 
 export default function UbicacionFaq() {
 
